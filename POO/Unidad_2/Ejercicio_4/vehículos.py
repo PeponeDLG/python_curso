@@ -9,7 +9,7 @@ class Vehículo:
         self._año = año
 
     def arrancar(self):
-        print("Arrancando ", self.modelo, "...")
+        print("Arrancando ", self._modelo, "...")
 
     def detener(self):
         print("Deteniendo ", self._modelo, "...")
@@ -22,10 +22,10 @@ class Coche(Vehículo):
         super().__init__(marca, modelo, año)
 
     def arrancar(self):
-        super().arrancar() + " que es un coche"
+        super().arrancar() , " que es un coche"
 
     def __str__(self):
-        return f"Marca: {self._marca}\nModelo: {self._modelo}\nAño: {self._año}\nNº Puertas: {self.__puertas}"
+        return f"{super().__str__}\nNº Puertas: {self.__puertas}"
 
 
 class Moto(Vehículo):
@@ -35,10 +35,10 @@ class Moto(Vehículo):
         super().__init__(marca, modelo, año)
 
     def arrancar(self):
-        super().arrancar() + " que es una moto"
+        super().arrancar() , " que es una moto"
 
     def __str__(self):        
-        return f"Marca: {self._marca}\nModelo: {self._modelo}\nAño: {self._año}\nCilindrada: {self.__cilindrada}"
+        return f"{super().__str__}\nCilindrada: {self.__cilindrada}"
         
 
 class Camion(Vehículo):
@@ -48,8 +48,8 @@ class Camion(Vehículo):
         super().__init__(marca, modelo, año)
 
     def arrancar(self):
-        super().arrancar() + " que es un camion"
+        super().arrancar() , " que es un camion"
 
 
     def __str__(self):
-        return f"Marca: {self._marca}\nModelo: {self._modelo}\nAño: {self._año}\nCapacidad: {self.__capacidad_carga}"
+        return f"{super().__str__}\nCapacidad: {self.__capacidad_carga}"
