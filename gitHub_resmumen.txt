@@ -1,0 +1,66 @@
+Subir cambios
+    # Ver qué ha cambiado
+    git status
+
+    # Añadir todos los cambios
+    git add .
+
+    # O añadir archivos específicos
+    git add asignatura_1/seccion_1/ejercicio_1.py
+
+    # Hacer commit
+    git commit -m "Añadido ejercicio de listas y corregido error en funciones"
+
+    # Subir a GitHub
+    git push
+
+Bajar cambios
+    # Navega a la carpeta de tu proyecto
+    cd curso-python
+
+    # Descarga todos los cambios desde GitHub
+    git pull
+
+Consejos útiles:
+
+    git status: Siempre verifica qué archivos han cambiado antes de añadirlos
+
+    git add .: Añade TODOS los archivos modificados
+
+    git add archivo.txt: Añade solo un archivo específico
+
+    Mensajes de commit: Sé descriptivo, por ejemplo:
+
+        "Corregido bug en calculadora"
+
+        "Añadidos ejercicios de bucles"
+
+        "Actualizado README con instrucciones"
+
+==================================================================================
+============ Conectar PC a GitHub ================================================
+==================================================================================
+
+Configurar Git
+    git config --global user.name "PeponeDLG"
+    git config --global user.email "tu-email@ejemplo.com"
+
+Configurar SSH
+    # Generar nueva clave SSH (si no tienes)
+    ssh-keygen -t ed25519 -C "tu-email@ejemplo.com"
+
+    # Ver y copiar la clave pública para añadirla en GitHub "settings->SSH and GPG keys"
+    cat ~/.ssh/id_ed25519.pub
+
+    # Verificar conexión
+    ssh -T git@github.com
+
+Clonar repositorio
+    # Navega a donde quieras guardar el proyecto
+    cd ~/Documentos  # o donde prefieras
+
+    # Clona el repositorio
+    git clone git@github.com:PeponeDLG/curso-python.git
+
+    # Entra en la carpeta
+    cd curso-python
