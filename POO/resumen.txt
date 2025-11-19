@@ -1,0 +1,16 @@
+FUNCIONES
+
+	def funcion(param1, param2, param3):
+		...
+		...
+		...
+
+	-> pass - operación nula. Se puede usar, por ejemplo, para crear una función vacía
+					EJ:	def funcion()
+								pass
+
+	llamada a la función
+	
+	funcion() -> sin parámetros
+	funcion(2,3,4) -> con parámetros
+	funcion(param1=1,param2=2,param3=3) -> con parámetros
