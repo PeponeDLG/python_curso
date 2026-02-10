@@ -1,0 +1,8 @@
+- Mostrar atajos:
+^ks
+- Ejecutar archivo Python:
+^Enter
+- Acceder a terminal:
+^`
+- Finalizar terminal:
+^Backspace

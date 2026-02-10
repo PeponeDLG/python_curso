@@ -1,0 +1,62 @@
+Introducción
+https://www.youtube.com/watch?v=Z2VMC7p5J2Q&list=PLG1qdjD__qH7elIRiQoqRdY0ZzThfLnxn
+
+- Seleccionar varias celdas: Click en celda > shift + click en otra celda
+- Siguiente celda: tab
+- Nueva hoja de cálculo: símbolo '+' de esquina inf.izq.
+
+
+Tipos de datos
+https://www.youtube.com/watch?v=HeWah4LjBWM&list=PLG1qdjD__qH7elIRiQoqRdY0ZzThfLnxn&index=2
+
+- Cambiar configuración regional (adapta formatos al país): Archivo > Configuración > General > Configuración regional
+- Cambiar tipo de dato y formato: Formato > Número texto etc, o en barra de acceso rápido
+- Aumentar y disminuir decimales: Barra de acceso rápido
+- Quitar formato: Barra acc.rap. > botón 123 > Texto sin formato (al cambiar conf.regional se mantendrá igual porque es texto plano)
+- Crear serie de datos: Click en el círculo de la esq.inf.der de la celda y arrastrar
+- Personalizar formato de número: Barra acc.rap. > botón 123 > Formato de número personalizado
+- Redpndear cifra: Barra acc.rap. > botón 123 > Formato de número personalizado > 0
+Nota: El valor real sigue guardado, no se pierde. En la barra de valores donde pone fx se puede ver el valor real.
+- Crear formato de número personalizado: (positivo azul, con puntos y con dos decimales, negativo en rojo, con '-', con puntos y con dos decimales) en Formatos de números personalizados escribir: [Blue]0.00#,#;-[Red]0.00#,#
+- Cambiar formato de moneda: Barra acc.rap. > botón € > botón 123 > Moneda personalizada
+- Cambiar a formato fecha: Barra acc.rap. > botón 123 > Fecha
+- Cambiar de fecha: dobleclick en celda. Al arrastrar pone un día en cada celda.
+- Cambiar a formato porcentaje: Barra acc.rap. > botón %
+- Cambiar a formato lógico: En la celda escribir: =TRUE o =FALSE
+- Crear casilla de verificación: Insertar > Crear casilla de verificación
+
+
+Series de datos
+https://www.youtube.com/watch?v=aJRY-q5PwWI&list=PLG1qdjD__qH7elIRiQoqRdY0ZzThfLnxn&index=3
+
+- Crear serie: Seleccionar dos celdas con datos y arrastrar
+- Ajustar tamaño de varias columnas: ctrl + click en cabeceras > click arrastrando en borde de la última. Se ponen todas del mismo tamaño.
+- Mover datos: Seleccionar varios datos y poner puntero en borde. Sale una mano, click y mover
+- Diferencia eliminar columna/borrar columna: Eliminar desplaza a otras columnas. Borrar borra el contenido.
+
+
+Introducción a las fórmulas. Prioridad de operadores
+https://www.youtube.com/watch?v=fWThQgl1HIc&list=PLG1qdjD__qH7elIRiQoqRdY0ZzThfLnxn&index=7
+
+- Introducir una fórmula en una celda: Poner '=' al principio seguido de los operadores y argumentos de la fórmula. Los argumentos pueden ser datos, símbolos (variables) o referencias a otras celdas.
+- Ver la fórmula en vez del resultado: Ver > Mostrar > fórmulas
+
+
+Importar datos
+https://www.youtube.com/watch?v=b8BYseZnKiM&list=PLG1qdjD__qH7elIRiQoqRdY0ZzThfLnxn&index=8
+
+- Introducir referencias en fórmulas:
+    - Ej. Misma hoja: =A2+B3
+    - Ej. Distinta hoja, misma hoja de cálculo: =NOMBRE_HOJA!C3+C3
+    - Ej. Distinta hoja de cálculo: =IMPORTRANGE("URL_HOJA","NOMBRE_HOJA!C3")
+
+- Sumar un rango de celdas: =D3:D11
+
+
+
+
+
+
+
+
+

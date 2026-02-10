@@ -1,0 +1,111 @@
+Lección 2: Escritura correcta de código Python
+
+Diferencia entre Shell y archivo Python
+
+    Shell:
+        Ejecución inmediata línea por línea
+        Resultados al instante
+        Variables temporales (se pierden al cerrar)
+        Para pruebas rápidas
+    
+    Archivo Python:
+        Guarda en disco permanentemente
+        Se ejecuta todo el archivo de una vez
+        Reutilizable muchas veces
+        Para programas completos
+
+Creación de un archivo .py desde IDLE.
+    Método 1: Desde Shell
+        Abre IDLE (aparece la Shell)
+        Menú: File → New File
+        Escribe tu código Python
+        Guarda: File → Save (Ctrl+S)
+        Pon nombre con extensión .py
+        Ejecuta: Run → Run Module (F5)
+
+    Método 2: Directo
+        Abre IDLE
+        Ctrl+N (nuevo archivo)
+        Escribe código
+        Ctrl+S para guardar
+        F5 para ejecutar
+
+    Ejemplo de programa sencillo:
+
+        Entrada de datos.
+
+        Uso de if.
+
+    Explicación clara de:
+
+        Sangrías (qué son y por qué son obligatorias).
+            Espacios o tabs al inicio de una línea para indicar bloques de código.
+            Reemplazan a las llaves {} de otros lenguajes
+            Definen qué código pertenece a qué bloque
+            Python las necesita para entender la estructura
+
+        Instrucciones en varias líneas.
+            1. Barra invertida \ (continuación explícita)
+                texto = "Este es un texto muy " \
+                    "largo que continúa " \
+                    "en varias líneas"
+            2. Paréntesis () (continuación implícita)
+                # Con listas
+                frutas = [
+                    'manzana',
+                    'banana',
+                    'naranja',
+                    'uva'
+                ]
+
+                # Con operaciones matemáticas
+                resultado = (10 * 20 * 
+                            30 * 40)
+
+                # Con diccionarios
+                persona = {
+                    'nombre': 'Juan',
+                    'edad': 25,
+                    'ciudad': 'Madrid'
+                }
+
+                # Con llamadas a funciones
+                valor = funcion_larga(
+                    argumento1,
+                    argumento2,
+                    argumento3
+                )
+            3. Comillas triples ''' o """ (strings largos)
+                mensaje = """Este es un mensaje
+                muy largo que ocupa
+                varias líneas
+                naturalmente."""
+
+                # También para documentación
+                def funcion():
+                    """
+                    Esta función hace algo importante.
+                    Puede tener múltiples líneas de
+                    documentación sin problemas.
+                    """
+                    return True
+
+        Comentarios en Python.
+            1. Comentario de una línea #
+                print("Hola")  # Comentario después de código
+            2. Comentario multilínea ''' o """
+
+
+    Ejemplos de código:
+
+        Bien sangrado.
+
+        Mal sangrado (y su error).
+
+    Capturas:
+
+        Código en el editor.
+
+        Ejecución correcta.
+
+        Error por mala sangría (si lo provocan).

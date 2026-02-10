@@ -1,0 +1,199 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram name="Página-1" id="vHar7Hv1e8rSHoO4Wr69">
+    <mxGraphModel dx="1112" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I57-Us7d3O4SThQjQGDu-1" value="INICIO" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="190" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-5" value="¿Vegano?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="287.5" y="330" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-6" value="¿Alergia al marisco?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="267.5" y="950" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-7" value="¿Intolerancia a la lactosa?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="275" y="470" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-8" value="¿Alergia al pescado?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="267.5" y="800" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-9" value="¿Intolerancia al gluten?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="640" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-14" value="Muestra los platos restantes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="1120" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-1" target="I57-Us7d3O4SThQjQGDu-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="345" y="270" as="sourcePoint" />
+            <mxPoint x="670" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-18" value="SI" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="330" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-19" value="Elimina los platos no veganos" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="335" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-5" target="I57-Us7d3O4SThQjQGDu-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="670" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-5" target="I57-Us7d3O4SThQjQGDu-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="670" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-22" value="NO" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="380" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="350" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-24" value="Elimina los platos con lactosa" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="490" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-7" target="I57-Us7d3O4SThQjQGDu-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="670" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="350" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-7" target="I57-Us7d3O4SThQjQGDu-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="650" as="sourcePoint" />
+            <mxPoint x="570" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-28" value="SI" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="485" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-29" value="NO" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="550" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-30" value="Elimina los platos con gluten" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="655" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-9" target="I57-Us7d3O4SThQjQGDu-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="680" as="sourcePoint" />
+            <mxPoint x="670" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-9" target="I57-Us7d3O4SThQjQGDu-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="680" as="sourcePoint" />
+            <mxPoint x="670" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="680" as="sourcePoint" />
+            <mxPoint x="350" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-34" value="SI" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="425" y="645" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-35" value="NO" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="710" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-36" value="Elimina los platos con pescado" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="810" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-8" target="I57-Us7d3O4SThQjQGDu-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="680" as="sourcePoint" />
+            <mxPoint x="670" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-8" target="I57-Us7d3O4SThQjQGDu-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="680" as="sourcePoint" />
+            <mxPoint x="670" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="680" as="sourcePoint" />
+            <mxPoint x="350" y="930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-41" value="SI" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="415" y="810" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-42" value="NO" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="860" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-43" value="Elimina los platos con pescado" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="960" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-6" target="I57-Us7d3O4SThQjQGDu-43" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="780" as="sourcePoint" />
+            <mxPoint x="670" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-6" target="I57-Us7d3O4SThQjQGDu-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="880" as="sourcePoint" />
+            <mxPoint x="670" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-46" value="FIN" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1230" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-14" target="I57-Us7d3O4SThQjQGDu-46" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="1060" as="sourcePoint" />
+            <mxPoint x="670" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="I57-Us7d3O4SThQjQGDu-43" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="1060" as="sourcePoint" />
+            <mxPoint x="350" y="1080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-49" value="SI" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="420" y="960" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-50" value="NO" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1010" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I57-Us7d3O4SThQjQGDu-51" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p&gt;Tarea 1. Eligiendo plato&lt;/p&gt;&lt;/h1&gt;&lt;p&gt;Pregunta sobre las intolerancias y alergias para mostrar un menú que excluya los platos no aceptados.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="10" width="620" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,6 @@
+- Medidas de dispersión: Sirven para ver cómo están distribuidos los datos. Cuanto mayor sea la dispersión, menor centralización de los datos. Cuando la distribución está centrada (), nos quedamos con el 50% central de la muestra (rango intercuartílico) limpiando así los datos.
+Las más utilizadas son: rango intercuartílico, desviación estándar, coef. de variación de pearson.
+
+Por ejemplo, la desviación estándar  en horas por dispositivos es de 3 horas, pero en los desbloqueos de teléfono es mucho mayort. Sin embargo esa comparación no vale porque no están en las mismas unidades. Para evitar este problema nos fijamos mejor en el coeficiente de variación y vemos que es similar en ambas columnas.
+
+Otro ejemplo: Si vemos un histograma de las horas de sueño agrupadas, se ve a simple vista que los datos están bastante centralizados, por lo que se pueden limpiar quedándonos con el rango intercuartílico.

@@ -1,0 +1,60 @@
+1.1 Qué tareas realiza el lenguaje por el programador.
+
+    
+    Tareas Principales de un Lenguaje de Programación
+    -------------------------------------------------
+    1. Expresar Lógica y Algoritmos
+
+        Definir instrucciones paso a paso
+
+        Implementar decisiones (if/else) y repeticiones (bucles)
+
+        Resolver problemas mediante algoritmos estructurados
+
+    2. Gestionar Datos y Memoria
+
+        Declarar variables y estructuras de datos
+
+        Manipular y transformar información
+
+        Controlar almacenamiento y acceso a datos
+
+    3. Controlar el Flujo de Ejecución
+
+        Ordenar secuencias de operaciones
+
+        Manejar errores y excepciones
+
+        Coordinar tareas simultáneas (concurrencia)
+
+    4. Organizar y Modularizar Código
+
+        Crear funciones y métodos reutilizables
+
+        Diseñar clases y objetos (en OOP)
+
+        Dividir programas en componentes manejables
+
+    5. Interactuar con el Entorno
+
+        Acceder a hardware y sistema operativo
+
+        Comunicarse en red (APIs, protocolos)
+
+        Crear interfaces de usuario (GUI, web)
+
+    6. Optimizar y Mantener
+
+        Gestionar recursos eficientemente
+
+        Mejorar rendimiento del código
+
+        Facilitar pruebas, depuración y mantenimiento
+
+    Conclusión:
+    El lenguaje de programación es el puente entre el pensamiento lógico del programador y las instrucciones ejecutables por la computadora, permitiendo crear soluciones digitales para problemas reales.
+
+    "Traducimos problemas en soluciones, lógica en código"
+
+   
+

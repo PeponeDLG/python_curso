@@ -1,0 +1,39 @@
+ANACONDA - COMANDOS
+
+- Inicializar shell:
+conda activate
+
+- Volver al shell normal:
+conda deactivate
+    Nota: si estamos en un entorno que no es el base nos activa el base. Volver a ejecutar para desactivarlo también.
+
+- Crear un nuevo entorno:
+conda create -n nombre_del_entorno python=versión_de_python
+
+- Listar entornos disponibles:
+conda env list
+
+- Listar paquetes de un entorno activado:
+conda list
+
+- Instalar herramientas en un entorno activado:
+conda install nombre_herramienta nombre_herramienta etc
+
+- Guardar entorno como plantilla (nombre_del_entorno.yml):
+conda env export > nombre_del_entorno.yml
+
+- Usar la plantilla para crear un entorno idéntico en otro equipo:
+conda env create -f nombre_del_entorno.yml
+
+- Anular la autoactivación del shell:
+conda config --set auto_activate_base false
+
+- Lanzar Jupyter Lab (se ejecuta en navegador):
+conda activate analisis_datos
+jupyter lab
+
+
+EXTRA
+
+- Ejecutar entornos de Anaconda en VSCodium:
+Click en la esquina inferior derecha donde pone la versión de Python y cambiar al entorno que queramos (cada uno ejecuta su propio intérprete).

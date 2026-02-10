@@ -1,0 +1,31 @@
+Array de 2 dimensiones (matriz): para 2 variables.
+Para poder sumar arrays deben ser de la misma dimensión y del mismo tamaño.
+
+Con el fancy indexing podemos hacer una copia del array original por índices. Permite **controlar el orden de los elementos en el array nuevo**.
+
+Resumen:
+- Slicing: de aquí hasta aquí
+- Boolean indexing: aísla los que cumplen unas condiciones
+- Fancy indexing: Este, luego este, y luego éste (y en el orden que quiera).
+
+
+Operaciones unarias: aplicar una operación a cada valor de un arr. por ejemplo la raíz de cada valor de un array.
+Operaciones binarias: operar cada elemento de un array por un escalar o por otro array (arr[0]*arr[0], arr[1]*arr[1] etc) (funciones vectorizadas).
+
+
+np.isnan(arr[3]) -> Devuelve True si el valor es nan
+np.isnan(arr) -> Devuelve qué valores del vector son nan (un array de booleanos)
+np.any(arr) -> Devuelve True si alguno de los valores del arr es True
+np.any(arr) -> Devuelve True si todos los valores son True
+
+
+Al lanzar un dado, el conjunto de posibles valores es **un conjunto**.
+
+
+np.intersect1d(ar1, ar2) -> Devuelve los elementos que están en ambos (como un INNER JOIN)
+
+np.in1d(ar1, ar2) -> Devuelve True si elemento a elemento del ar1 está presente o no en ar2
+
+
+Conmutativas: unique() (no es que sea conmutativa, es que se aplica a un solo array), intersect().
+No conmutativas: union1d(), in1d(), setdiff1d().

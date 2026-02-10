@@ -1,0 +1,79 @@
+# Manejo de archivos con try - except - else - finally
+
+try:
+    # Intentar abrir un archivo en modo lectura
+    with open("ejemplo.txt", "r", encoding="utf-8") as archivo:
+        contenido = archivo.read()
+
+except IOError as io:
+    print("Error IO: ",io)
+
+except FileNotFoundError:
+    print("Error: El archivo no existe.")
+
+else:
+    # Se ejecuta solo si NO hubo excepción
+    print("Contenido del archivo:")
+    print(contenido)
+
+finally:
+    # Se ejecuta siempre
+    print("Programa finalizado.")
+
+
+
+# Manejo de excepción PermissionError
+
+try:
+    # Intentar escribir en un archivo protegido (ejemplo en raíz del sistema)
+    with open("/protegido.txt", "w", encoding="utf-8") as archivo:
+        archivo.write("Intentando escribir en un archivo protegido...")
+
+except PermissionError:
+    print("Error: No tienes permisos para escribir en este archivo.")
+
+else:
+    print("Archivo escrito correctamente.")
+
+finally:
+    print("Programa finalizado.")
+
+# Error estandar
+try:
+    pass
+except Exception as e:
+    print(e)
+
+# Lanzando errores
+raise Exception("El número de sets tiene que estar entre 3 y 5")
+
+
+# Escribir JSON
+json.dump(diccionario, fichero(w), indent=4, ensure_ascii=False)
+
+# texto txt write-add
+with open(ruta,"a",encoding="UTF-8") as txt:
+    for linea in texto_add:
+        txt.write(linea)
+
+# csv write
+with open(path, mode="w", encoding="utf8", newline='') as fic:
+    csv_writer = csv.writer(fic, delimiter=",", lineterminator="\n")
+
+    for elem in aux:
+        lista = (
+            elem.Year,
+            elem.Host_country,
+            elem.Host_city,
+            elem.Country_Name,
+            elem.Country_Code,
+            elem.Gold,
+            elem.Silver,
+            elem.Bronze
+        )
+        csv_writer.writerow(lista)
+
+# json write
+with open(path, 'w', encoding="utf-8") as fic:
+    path = os.path.join(os.path.dirname(__file__), "mercado.json")
+    json.dump(res, fic, indent=4, ensure_ascii=False) # res es un diccionario

@@ -1,0 +1,29 @@
+Nota: Hay errores en las presentaciones.
+
+- Pulsar sobre cabecera de columna para pillar todos los datos de una columna.
+- Aplicar filtro en cabecera de columna (p.ej. solo hombres) en columna y luego usar número de la función (1 para promedio) p.ej =SUBTOTALES(1Data(B:B)). Se calcula y se copia com valor, porque al cambiar el filtro se actualiza el cálculo y se pierde el valor.
+
+La idea es:
+ANALIZAR DATOS PARA LANZAR HIPÓTESIS. p.ej: Parece que hay una correlación entre el nivel de estudios y el uso de rrss. Luego se calcula la correlación para ver si se sostiene la hipótesis o no. En caso afirmativo se podría crear una aplicación con Python para estudiarlo.
+
+
+Medidas de dispersión:
+
+- Recorrido muestral: máximo valor - mínimo valor.
+- Para todos los recorridos: Cuanto mayor sea, mayor dispersión.
+- Recorrido relativo, Recorrido semi-intercuartílico y Coeficiente de Variación de Pearson: Permiten eliminar la influencia de las unidades.
+
+Cuando el Coeficiente de Variación de Pearson es mayor de 0.2, la media aritmética NO ES REPRESENTATIVA. Cuanto más cercano esté de 0, más importancia cobran las medidas de tendencia central.
+
+El concepto de relativo significa que se pueden omitir las unidades. Ejemplo: horas/horas = 1
+
+- Tipificar una variable: restarle la media y dividir por la desviación típica.
+
+CLAVE: Cuando hay mucha dispersión, hace pensar que algo está afectando a las variables.
+
+
+Medidas de forma:
+
+Coeficiente de asimetría de Fischer: Sirve para medir la simetría. Menor que 0: Asimetría a la izquierda. Media=moda=mediana: Simetría. Mayor que 0: Asimetría a la derecha.
+
+Apuntamiento o medida de curtosis: La mayoría de valores alcanzan la may... TODO

@@ -1,0 +1,13 @@
+Apuntes
+
+Lanzar instancia de Jupyter:
+conda activate analisis_datos
+jupyter lab
+
+Jupyter organiza los textos por bloques, de código, de markdown y de raw.
+
+Antes de salir hay que finalizar el kernel.
+
+Para limpiar el resultado de una ejecución, clickder en el bloque de código y clear cell output.
+
+Los ficheros que ejecuta Jupyter en realidad son JSON con los bloques.

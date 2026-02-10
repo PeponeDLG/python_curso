@@ -1,0 +1,5 @@
+Diario práctica Panda 1.0
+-------------------------
+
+Voy a intercalar la Práctica 1 con la 2 para comprobar que las pruebas realizadas funcionan correctamente.
+

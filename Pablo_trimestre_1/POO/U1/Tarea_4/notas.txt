@@ -1,0 +1,11 @@
+- Si se especifica alguna constante, simplemente no le ponemos setter.
+- Hay que controlar que los datos que se metan sean del tipo correcto y dentro del rango correcto.
+- En general las excepciones se usan en las clases, y el try/except en el main para la ejecución, porque las excepciones paran la ejecución y el try/except no.
+
+# Dudas que resolver en clase:
+# 1. Cuando en este mismo archivo usamos las variables de clase, ¿por qué tienen que estar
+# precedidas por Velero.nombre_Variable?
+# 2. ¿Hay alguna forma en Python de reducir el tamaño del return del __str__ paa que no
+# sea tan largo, o es mejor dejarlo así?
+# 3. Mi función para formatear horas se aplica a un entero de minutos, no a un objeto.
+# ¿Por qué tiene que llevar 'self'?

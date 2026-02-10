@@ -1,0 +1,16 @@
+https://www.kaggle.com/datasets/tarekmasryo/digital-health-and-mental-wellness
+
+Hay que buscar relación entre variables para predecir cosas.
+
+Proceso:
+1º intuir posible relación
+2º usar algoritmos para comprobar la relación
+3º usar Python para hacer predicciones
+
+Edad: variable cuantitativa discreta. Podemos tomar moda, media, mediana, cuartiles
+
+
+
+
+
+

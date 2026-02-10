@@ -1,0 +1,42 @@
+Se tiene que hacer en jupiter web
+Usar solo lo que viene en la hoja de recordatorio
+
+* Lo ideal es solo usar variables cuando se vaya a reutilizar, por ejemplo:
+    lista_aprobados = alumnos >=5 ; alumnos(lista_aprobados)
+    alumnos(alumnos >= 5)
+
+Ejercicios 4. Numpy
+    -> Tare
+    np.abs(array_pos_neg) -> hace copia, no modifica el array_pos_neg
+    array_pos_neg.abs() -> si modifica el array
+
+
+    Mosrar signos del array_float -> Ejercicio 11 de "Ejercicios 4. Numpy.pdf"
+    array_float = np.random.standard_normal(10)
+
+    np.sign(array_float).astype(int) -> astype() castea el array entero a tipo int
+
+    -> Ejercicio 15 de "Ejercicios 4. Numpy.pdf"
+    aprobados_ambas=(notas_mates>=5)&(notas_fisca>=5)
+    print(alumnos[aprobados_ambas])h
+
+Ejercicios 5. Numpy
+    6. multiplo de 7
+    multiplo7=np.any(array1%7==0)
+
+    7.
+    percentil 25=4,5 -> el 25% de las notas están debajo de 4,5. 
+    percentil 50=7 -> las notas son muy altas, por lo que la distribución está alejada de la normal 
+
+    8.
+    percentil_70 = np.percentile(notas,70)
+    mejores_alumnos = alumno[notas>=70]
+
+Gráficas
+    Conviene crear un objeto tipo "figure" para almacenar una o varias gráficas
+    fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(12,4))
+
+
+Instrucciones examen
+    crear carpeta
+    descargar csv, plantilla_examen (renombrarlo con nuestro nombre) y guardarlo en esa carpeta

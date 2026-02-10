@@ -1,0 +1,37 @@
+Lección 1: Primer contacto con Python y el IDLE
+
+¿Qué es Python?
+    Python es un lenguaje de programación de alto nivel, interpretado, de propósito general y multiparadigma. Es uno de los lenguajes más populares del mundo.
+
+¿Qué es IDLE y para qué sirve?
+    IDLE es el entorno de desarrollo integrado que viene incluido con Python. Es como un "bloc de notas especializado" para escribir y ejecutar código Python.
+
+    Editor de código básico, Shell interactivo y Depuración simple
+
+Descripción de la ventana Shell
+    La Shell (o "consola interactiva") es la ventana principal de IDLE donde puedes ejecutar código Python directamente, línea por línea, sin necesidad de crear un archivo.
+
+    Promp: >>> print("Hola Mundo")
+
+    Área de salida
+        Muestra resultados de tus comandos
+        También muestra mensajes de error (si los hay)
+        Mantiene historial de lo ejecutado
+
+
+Ejemplos de:
+    Instrucciones elementales (print, operaciones).
+    Una instrucción en una sola línea.
+
+
+
+Ejemplo de varias instrucciones en una línea y explicación razonada de:
+    Por qué funciona.
+    Por qué es mala praxis.
+
+
+
+Capturas de:
+    IDLE abierto.
+    Shell ejecutando instrucciones.
+

@@ -1,0 +1,20 @@
+Grupo 1: Rafa Ruiz, Pablo Chamorro, Jose Soler
+Caso 2: Biblioteca del aula
+La biblioteca de clase necesita un sistema para llevar el control de qué libros están prestados y a quién.
+Queréis diseñar una pequeña aplicación que registre los préstamos y las devoluciones.
+
+Preguntas guía:
+
+- ¿Qué entorno te parece más fácil para este tipo de control: un programa en el ordenador o una aplicación web sencilla?
+
+- ¿Qué datos serían necesarios guardar (título, alumno, fecha…)?
+
+- ¿Qué pasos básicos seguirías para hacerlo funcionar?
+
+Notas:
+- Se presenta un caso simple. Complicarlo.
+- Comparativa de cada entorno de desarrollo (3 o 4) y elegir uno.
+- Límite de entrega: 17 noviembre.
+- La presentación será de unas pocas diapositivas que dure 5-7 minutos. Poca literatura, principalmente gráficos.
+
+

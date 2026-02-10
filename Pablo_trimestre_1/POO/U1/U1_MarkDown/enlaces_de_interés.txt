@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/dunder-magic-methods-python/
+https://es.stackoverflow.com/questions/418644/como-se-usa-un-garbage-colector.
+https://realpython.com/python-del-statement/
+https://www.digitalocean.com/community/tutorials/python-str-repr-functions

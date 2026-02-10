@@ -1,0 +1,74 @@
+- Escala de intervalo
+- Escala de razón
+
+Dudas del test:
+
+---
+En una encuesta sobre el tipo de transporte utilizado por los empleados para ir al trabajo, se obtuvieron los siguientes resultados:
+
+Coche: 15 empleados
+Autobús: 8 empleados
+Bicicleta: 5 empleados
+A pie: 2 empleados
+¿Cuál es la frecuencia relativa del grupo que va en autobús?
+
+La respuesta correcta es:
+26,noseké% (8/30)
+---
+¿Qué tipo de frecuencia se debe usar al comparar variables en diagramas de barras?
+Pregunta 13Respuesta
+a.
+Frecuencia absoluta
+b.
+Frecuencia acumulada
+c.
+Densidad de frecuencia
+d.
+Frecuencia relativa
+
+La respuesta correcta es: Frecuencia relativa
+---
+¿Cuál es la marca de clase del intervalo (150, 155]?
+Pregunta 16Respuesta
+a.
+155
+b.
+152,5
+c.
+150,5
+d.
+150
+
+La respuesta correcta es: 152,5
+Es la media entre 150 y 155
+---
+¿Qué escala de medida permite ordenar pero no medir distancias entre categorías?
+Pregunta 18Respuesta
+
+a.
+Razón
+b.
+Ordinal
+c.
+Nominal
+d.
+Intervalo
+
+La respuesta correcta es: Ordinal
+Repasar esto. Está en los apuntes.
+---
+¿Qué tipo de gráfico se utiliza para representar variables cuantitativas discretas?
+Pregunta 29Respuesta
+
+a.
+Polígono de frecuencias
+b.
+Histograma
+c.
+Diagrama de barras
+d.
+Diagrama de sectores
+
+La respuesta correcta es: Diagrama de barras
+---
+

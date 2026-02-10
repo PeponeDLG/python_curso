@@ -1,0 +1,15 @@
+CTRL + P
+"open settings user (json)"
+
+Añadir:
+    // Configuración de depuración Python
+    "python.terminal.focusAfterLaunch": true,
+    "debug.internalConsoleOptions": "neverOpen",
+    
+    // Configuración específica de Python
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": false,
+    
+    // Otras configuraciones útiles...
+    "editor.fontSize": 14,
+    "files.autoSave": "afterDelay"

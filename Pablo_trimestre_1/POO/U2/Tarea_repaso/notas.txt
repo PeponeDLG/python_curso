@@ -1,0 +1,1 @@
+Usar los métodos strftime() y strptime() para formatear fechas y horas

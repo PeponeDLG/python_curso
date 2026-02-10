@@ -1,0 +1,2 @@
+- Si no se especifica lo contrario, los atributos deben ser privados.
+- randint() es más sencillo para generar enteros aleatorios.

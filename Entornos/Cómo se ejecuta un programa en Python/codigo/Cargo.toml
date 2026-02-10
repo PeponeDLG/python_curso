@@ -1,0 +1,8 @@
+[package]
+name = "codigo"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "codigo"
+path = "main.rs"  # ← ¡IMPORTANTE! Le dice a Cargo dónde está main.rs

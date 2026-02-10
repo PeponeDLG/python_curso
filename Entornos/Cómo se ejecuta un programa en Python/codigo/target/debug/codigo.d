@@ -1,0 +1,1 @@
+/home/pepone/Documentos/python/python_curso/Entornos/Cómo\ se\ ejecuta\ un\ programa\ en\ Python/codigo/target/debug/codigo: /home/pepone/Documentos/python/python_curso/Entornos/Cómo\ se\ ejecuta\ un\ programa\ en\ Python/codigo/main.rs

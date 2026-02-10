@@ -1,0 +1,6 @@
+Sesgos: Datos malos como nulos
+
+Variables independientes: y = f(x) = x2 => x sería la variable independiente
+Variables dependientes:  sería la y, que su valor dependerá del resultado de la función
+
+Recta de regresión: la recta que se obtiene 

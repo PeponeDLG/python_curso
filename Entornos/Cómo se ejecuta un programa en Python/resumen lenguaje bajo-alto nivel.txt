@@ -1,0 +1,80 @@
+
+restricciones:
+    presentación de Duración: 5–7 minutos
+
+    ejemplos de lenguaje de bajo nivel en rust y de alto nivel en python
+    
+
+🎯 Objetivo de la actividad
+
+Analizar el funcionamiento de un programa escrito en Python para:
+
+    identificar las características propias de los lenguajes de alto nivel, y
+
+    establecer las diferencias entre lenguajes compilados e interpretados,
+    apoyándose en pruebas reales con código y en el análisis de errores.
+
+📌 Código de partida
+
+    edad = int(input("Introduce tu edad: "))
+    if edad >= 18:
+        print("Eres mayor de edad")
+    else:
+        print("Eres menor de edad")
+🧩 Parte 1 – Python como lenguaje de alto nivel
+
+Analizad el código proporcionado e identificad:
+
+    Qué tareas realiza el lenguaje por el programador.
+
+    Qué características del código muestran que Python es un lenguaje de alto nivel.
+
+Debéis indicar al menos cinco aspectos concretos, basándoos en el propio código.
+⚙️ Parte 2 – Ejecución del programa: interpretado vs compilado
+
+Realizad las siguientes pruebas:
+
+    Ejecutad el programa correctamente.
+
+    Provocad un error de sintaxis (por ejemplo, eliminando los dos puntos : o modificando el sangrado).
+
+    Provocad un error en tiempo de ejecución (por ejemplo, una división entre cero).
+
+Para cada caso, analizad:
+
+    si el programa llega a ejecutarse,
+
+    en qué momento aparece el error,
+
+    qué indica esto sobre la forma en que Python ejecuta el código.
+
+🧠 Parte 3 – Comparación razonada
+
+Sin utilizar otros lenguajes, razonad y explicad:
+
+    qué ocurriría con estos mismos errores en un lenguaje compilado,
+
+    en qué momento se detectarían,
+
+    una ventaja y un inconveniente de cada modelo de ejecución.
+
+🎤 Presentación en clase
+
+La presentación debe incluir:
+
+    fragmentos de código analizados,
+
+    explicación clara de los conceptos trabajados,
+
+    conclusiones finales bien razonadas.
+
+Se valorará el uso correcto del vocabulario técnico y la claridad en la exposición.
+Criterios que se trabajan:
+
+RA2. Caracteriza elementos de la programación en Python, identificando los bloques fundamentales de construcción de un programa.
+
+Criterios de evaluación:
+
+RA2.a) Se han definido los aspectos fundamentales de la programación de alto nivel.
+
+RA2.b) Se han establecido las diferencias entre lenguajes compilados e interpretados.

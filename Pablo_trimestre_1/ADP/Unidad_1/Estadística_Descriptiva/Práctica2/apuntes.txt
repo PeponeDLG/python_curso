@@ -1,0 +1,17 @@
+Ejemplos:
+xi es el valor de una variable (i es el índice)
+
+Ejercicio 1:
+La moda es 0 que corresponde a Zaragoza capital, lo que significa que el lugar de residencia de la mayoría de los alumnos de la muestra es Zaragoza capital.
+Sólo podemos calcular la moda, por ser una variable aleatoria cualitativa nominal.
+
+Ejercicio 2:
+Representa el número de hermanos. Es una variable cuantitativa discreta y de razón (podemos establecer una proporción, por ejemplo el doble de hermanos)
+Moda: 2 hermanos. Significa que la mayoría de los alumnos de la muestra son 2 hermanos incluido el estudiante.
+Media: Creamos una columna nueva para calcular xi*ni (=B3*C3 en el excel y arrastramos). Para calcular el total sumamos todos los valores (=SUMA(D6:D11)). Por ultimo dividimos entre la frecuencia total (127) es decir =D12/C12 en el excel.
+Mediana: Calculamos la mitad de la frecuencia absoluta acumulada. La mitad es 127/2 = 63.5. Los 20 primeros (n1) quedan antes de la mediana. En los 71 siguientes (n2) está la mediana, porque ya 20 + 71 supera a la mitad. Por tanto la mediana corresponde a 2 hermanos. Conclusión: El número de hermanos incluído el estudiante que alcanzan el 50% de los estudiantes que menos hermanos tienen es 2.
+¿Cuáles son los valores de la distribución que delimitan el 50% de los valores centrales? Los dos límites son el cuartil 1 y el cuartil 3.
+Cálculo del cuartil 1: Se calcula igual pero a partir de 127/4=31,75 es decir, el que queda entre el 31 y el 33 (el 32). Por tanto el cuartil 1 queda en el n2 (2 hermanos)
+Cálculo del cuartil 3: 31,75*3=95,25, por tanto el cuartil 3 ya cae en el n3 (3 hermanos).
+Por tanto los valores de la distribución que delimitan el 50% de los valores centrales son el 2 y el 3.
+¿Cuál es el número medio de hermanos? La media (2,220472441) ¿Y el más frecuente? La moda (2).

@@ -1,0 +1,76 @@
+Qué características del código muestran que Python es un lenguaje de alto nivel (al menos cinco aspectos concretos, basándoos en el propio código)
+
+Es una de las que me tocaba hacer a mi. Este es el texto:
+
+CARACTERÍSTICAS QUE HACEN DE PYTHON UN LENGUAJE DE ALTO NIVEL
+
+1. Independencia de la Arquitectura
+
+Cada procesador tiene un conjunto de instrucciones (ISA, Instruction Set Architecture). Al escribir código en lenguaje ensamblador (Assembly) se utilizan directamente estas instrucciones, lo que hace que dicho código sólo pueda ser ejecutado por algunos procesadores. Esto hace que sea un código muy cercano a la máquina y difícil de leer y escribir por una persona.
+Al ser Python un lenguaje interpretado, el código no se compila directamente al lenguaje máquina específico de un procesador (por ejemplo x86 o ARM), sino que se ejecuta a través de una Máquina Virtual de Python (PVM), lo que permite que se adapte independiente de la arquitectura que lo va a procesar.
+
+Ejemplo:
+Este código demuestra cómo se adapta Python a cualquier sistema operativo.
+
+import os
+import platform
+
+print(f"Sistema Operativo: {platform.system()}")
+print(f"Directorio actual: {os.getcwd()}")
+
+
+2. La sintaxis
+
+Python utiliza una sintaxis limpia que se asemeja mucho al inglés. A diferencia de lenguajes de bajo nivel, no requiere símbolos complejos para definir bloques de código sino que utiliza la indentación, lo que ayuda a que el código pueda leerse de una manera muy cercana al inglés.
+
+Ejemplo de código:
+En el ejemplo se muestra cómo leer un archivo de texto y mostrar su contenido. Al leerlo es bastante autodescriptivo.
+
+with open("archivo.txt", "r") as archivo:
+    contenido = archivo.read()
+    print(contenido)
+
+
+3. Tipado Dinámico
+
+No es necesario declarar qué tipo de dato contiene una variable (entero, texto, decimal). Python determina el tipo en tiempo de ejecución. Además, es de tipado fuerte, lo que evita operaciones sin sentido entre tipos incompatibles, protegiendo la lógica del programa.
+En Python todo son objetos. Es capaz de determinar qué clase aplicar a cada variable en tiempo de ejecución y hacer la conversión.
+
+Ejemplo de tipado:
+variable al principio de la ejecución es un entero, y luego para a ser una cadena.
+
+variable = 10      # Python sabe que es un entero (int)
+variable = "Hola"  # Ahora sabe que es una cadena (str) sin error
+
+# Tipado fuerte: Esto daría error en lugar de resultados impredecibles
+# print(variable + 5) -> TypeError: can only concatenate str to str
+
+
+4. Abstracción de Estructuras de Datos
+
+Python ofrece tipos de datos complejos (listas, diccionarios, conjuntos) de forma nativa. En lenguajes de bajo nivel, tendrías que programar manualmente por ejemplo cómo se comporta una lista. En Python, estas estructuras ya ofrecen todas sus características por definición. Esto es especialmente notable en los tipos de datos mutables como las listas y diccionarios, que pueden cambiar de tamaño y contenido en tiempo de ejecución.
+
+Ejemplo:
+Manipulación de listas complejas en una línea
+
+# Filtrar y transformar una lista (List Comprehension)
+numeros = [1, 2, 3, 4, 5, 6]
+pares_al_cuadrado = [x**2 for x in numeros if x % 2 == 0]
+
+print(pares_al_cuadrado) # [4, 16, 36]
+
+
+5. Gestión Automática de Memoria
+
+En lenguajes de bajo nivel, el programador debe reservar y liberar memoria manualmente mediante órdenes específicas. En Python, el Garbage Collector rastrea los objetos que ya no se usan y libera la memoria automáticamente.
+
+Ejemplo:
+En la función se crea una lista bastante grande. Python libera la memoria automáticamente cuando la lista ya no es necesaria.
+
+# Se crea una lista en la función
+def crear_datos():
+    lista_gigante = [i for i in range(1000000)]
+    return sum(lista_gigante)
+
+# Al terminar la función, Python detecta que 'lista_gigante' ya puede borrarse
+resultado = crear_datos()

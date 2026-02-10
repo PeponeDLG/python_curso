@@ -1,0 +1,246 @@
+=== PANDAS: MANIPULACIÓN DE DATOS EN PYTHON ===
+
+--- ESTRUCTURAS FUNDAMENTALES (2.1 Pandas.pdf) ---
+
+1. SERIE (pd.Series)
+   - Estructura unidimensional con índice.
+   - Homogénea y de tamaño inmutable.
+
+   Ejemplo con índice por defecto:
+   obj_simple = pd.Series([4, 7, -5, 3])
+
+   Ejemplo con índice personalizado:
+   obj_con_indice = pd.Series([4, 7, -5, 3], index=['d', 'b', 'a', 'c'])
+
+   Crear Serie desde diccionario:
+   dic = {"Ohio": 35000, "Texas": 71000}
+   serie_estados = pd.Series(dic)
+
+   Convertir Serie a diccionario:
+   diccionario = serie_estados.to_dict()
+
+2. DATAFRAME (pd.DataFrame)
+   - Tabla rectangular, colección de columnas (Series) que comparten índice.
+
+   Crear desde diccionario de listas:
+   datos = {"ciudad": ["Almería", "Zafra"],
+            "temp_max": [38, 40]}
+   frame = pd.DataFrame(datos)
+
+   Especificar orden de columnas:
+   frame_ordenado = pd.DataFrame(datos, columns=["temp_min", "temp_max", "ciudad"])
+
+   Añadir/modificar columnas:
+   frame["hijos"] = 1                         # Valor constante
+   frame["hijos"] = np.arange(4.)            # Desde array
+   frame["mascotas"] = frame["hijos"]        # Nueva columna
+
+3. ÍNDICE (pd.Index)
+   - Inmutable, contiene las etiquetas de los ejes.
+
+   Crear índice:
+   obj = pd.Series(range(3), index=['a', 'b', 'c'])
+   index = obj.index
+
+   Métodos clave (ejemplo con Serie `obj`):
+   obj.index.append(['d'])                    # Concatenar
+   obj.index.difference(['a'])                # Diferencia de conjuntos
+   obj.index.intersection(['a', 'b'])         # Intersección
+   obj.index.isin(['a', 'x'])                 # Comprobar pertenencia
+   obj.index.drop('a')                        # Eliminar etiqueta
+
+--- FUNCIONALIDAD ESENCIAL (2.2 Funcionalidad esencial Pandas.pdf) ---
+
+1. REINDEXAR (reindex)
+   - Ajustar datos a un nuevo índice.
+
+   Ejemplo con Series:
+   obj2 = obj.reindex(['a', 'b', 'c', 'd', 'e'])
+
+   Ejemplo con DataFrame (columnas):
+   frame2 = frame.reindex(columns=["Texas", "Utah", "California"])
+
+   Argumentos clave:
+   frame.reindex(index=nuevo_indice, fill_value=0, method='ffill')
+
+2. ELIMINAR (drop)
+   - Eliminar etiquetas de un eje.
+
+   Ejemplo con Series:
+   obj2 = obj.drop(['c', 'e'])
+
+   Ejemplo con DataFrame:
+   frame2 = frame.drop(index="Ohio", columns=["Cuatro", "Dos"])
+
+3. SELECCIÓN CON LOC E ILOC
+   - .loc: selección por etiqueta (inclusivo).
+   - .iloc: selección por posición entera (exclusivo).
+
+   Ejemplos:
+   valor = frame.loc["Texas", "Uno"]          # Por etiqueta
+   valor = frame.iloc[1, 0]                   # Por posición
+
+   Selección múltiple:
+   frame.loc[:, ["Uno", "Dos"]]               # Múltiples columnas
+   frame.iloc[[1, 2], [0, 1]]                 # Filas y columnas por posición
+
+   Filtrado booleano:
+   frame[frame["Uno"] > 5]
+
+4. OPERACIONES ARITMÉTICAS CON ALINEACIÓN
+   - Uso de .add() con fill_value para evitar NaN:
+
+   suma = frame1.add(frame2, fill_value=0)
+
+5. ORDENACIÓN
+   - Por etiquetas:
+   frame.sort_index()                         # Filas
+   frame.sort_index(axis=1)                   # Columnas
+
+   - Por valores:
+   frame.sort_values(["a", "c"])              # Múltiples columnas
+
+6. ASIGNACIÓN DE RANGOS (rank)
+   - Asigna rango a los valores de una Serie.
+
+   obj.rank()                                 # Método 'average' por defecto
+   obj.rank(method="first")                   # Método 'first'
+
+7. ESTADÍSTICAS DESCRIPTIVAS
+   - Métodos de reducción (ignoran NaN por defecto):
+
+   frame.sum()                                # Suma por columnas
+   frame.mean()                               # Media
+   frame.std()                                # Desviación estándar
+   frame.count()                              # Conteo de no nulos
+   frame.min() / frame.max()                  # Mínimo y máximo
+   frame.idxmax() / frame.idxmin()            # Índice del valor máximo/mínimo
+
+   - Descripción general:
+   frame.describe()
+
+   - Conteo de valores únicos (Series):
+   conteo = serie.value_counts()
+
+--- IMPORTACIÓN Y EXPORTACIÓN DE DATOS (2.3 Importación y exportación de datos.pdf) ---
+
+1. IMPORTAR (pd.read_*)
+   - Desde CSV:
+   df = pd.read_csv("archivo.csv")
+
+   - Desde Excel:
+   df = pd.read_excel("archivo.xlsx")
+
+   - Desde SQL:
+   import sqlite3
+   con = sqlite3.connect('base.db')
+   df = pd.read_sql('SELECT * FROM tabla', con)
+
+   - Desde JSON:
+   df = pd.read_json("datos.json")
+
+   - Desde HTML:
+   dfs = pd.read_html("pagina.html")          # Retorna lista de DataFrames
+
+   - Desde portapapeles:
+   df = pd.read_clipboard()
+
+   Argumentos clave para CSV/Excel:
+   pd.read_csv("archivo.csv", sep=";", header=0, index_col="columna",
+               usecols=["col1", "col2"], parse_dates=["fecha"],
+               na_values=["N/A", ""], skiprows=10, nrows=100)
+
+2. EXPORTAR (df.to_*)
+   - A CSV:
+   df.to_csv("exportado.csv", index=False)
+
+   - A Excel:
+   df.to_excel("exportado.xlsx", index=False)
+
+   - A JSON:
+   df.to_json("exportado.json", orient="records", indent=4)
+
+   - A SQL:
+   df.to_sql('nombre_tabla', con, if_exists='replace')
+
+   - A HTML:
+   df.to_html("tabla.html")
+
+   - Al portapapeles:
+   df.to_clipboard()
+
+--- PREPARACIÓN DE DATOS (2.4 Preparación de datos.pdf) ---
+
+1. VALORES NULOS
+   - Detectar:
+   prueba.isna()
+
+   - Eliminar filas con nulos:
+   prueba.dropna()
+
+   - Eliminar solo si todos son nulos:
+   prueba.dropna(how="all")
+
+   - Rellenar con valor constante:
+   original.fillna(0)
+
+   - Rellenar con media:
+   original.fillna(original.mean())
+
+   - Rellenar columnas específicas:
+   original.fillna({1: 1.5, 2: 2.5})
+
+2. ELIMINAR DUPLICADOS
+   - Detectar:
+   df.duplicated()
+
+   - Eliminar:
+   df.drop_duplicates()
+
+3. MAPEAR VALORES (map)
+   - Aplicar diccionario a columna:
+   pez_agua = {'Boquerón': 'agua salada', 'Trucha': 'agua dulce'}
+   aquarium["Hábitat"] = aquarium["Especie"].map(pez_agua)
+
+4. REEMPLAZAR VALORES (replace)
+   - Reemplazar valores específicos (ej. centinelas):
+   numeros.replace([-999, -1000], np.nan)
+
+5. DISCRETIZAR (cut / qcut)
+   - En intervalos fijos:
+   division = pd.cut(edad, bins=[18, 25, 40, 60], labels=["Joven", "Adulto Joven", "Adulto"])
+
+   - En cuantiles (igual número de elementos):
+   division = pd.qcut(edad, q=4, labels=["Q1", "Q2", "Q3", "Q4"])
+
+6. AGRUPAR Y AGREGAR (groupby)
+   - Agrupar por columna y aplicar función:
+   ventas_por_categoria = df.groupby('Categoria')['Ventas'].sum()
+
+   - Múltiples agregaciones:
+   df.groupby('Categoria').agg({'Ventas': ['sum', 'mean'], 'Clientes': 'count'})
+
+7. CONVERTIR A FECHA (to_datetime)
+   df['Fecha_Venta'] = pd.to_datetime(df['Fecha_Venta'])
+
+   - Extraer componentes:
+   df['Año'] = df['Fecha_Venta'].dt.year
+   df['Mes'] = df['Fecha_Venta'].dt.month
+
+8. VARIABLES DUMMY (get_dummies)
+   - Codificación one-hot:
+   dummies = pd.get_dummies(df['Ciudad'])
+
+9. MANIPULACIÓN DE TEXTO (métodos str)
+   - Ejemplos:
+   df['columna'].str.lower()                  # Minúsculas
+   df['columna'].str.strip()                  # Quitar espacios
+   df['columna'].str.replace('viejo', 'nuevo') # Reemplazar
+   df['columna'].str.split(',', expand=True)  # Dividir
+
+10. DETECCIÓN DE OUTLIERS (IQR)
+    - Cálculo del rango intercuartílico:
+    Q1 = df['columna'].quantile(0.25)
+    Q3 = df['columna'].quantile(0.75)
+    IQR = Q3 - Q1
+    outliers = df[(df['columna'] < (Q1 - 1.5 * IQR)) | (df['columna'] > (Q3 + 1.5 * IQR))]

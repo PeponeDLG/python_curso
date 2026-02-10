@@ -1,0 +1,12 @@
+Idea:
+Programa de gestión de libros para las aulas y alumnos de un instituto. Debe de poder usarse en todas las aulas de un instituto.
+- Tendrá un stock de libros
+- Tendrá un
+
+Requisitos:
+- CRUD de libros
+- CRUD de alumnos
+- CRUD de aulas
+- Gestión de alquiler de libros
+
+Hay que diseñar una base de datos E-R. Usaremos sqlite con Python.

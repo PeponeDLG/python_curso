@@ -1,0 +1,2 @@
+Instalación Anaconda:
+https://www.aprendemachinelearning.com/instalar-ambiente-de-desarrollo-python-anaconda-para-aprendizaje-automatico/

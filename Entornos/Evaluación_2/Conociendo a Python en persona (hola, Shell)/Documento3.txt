@@ -1,0 +1,32 @@
+Lección 3: Uso de editores externos para programar en Python
+
+Qué es un editor de texto para programación.
+    Herramienta especializada para escribir y editar código, con funciones como:
+        Resaltado de sintaxis (colores según lenguaje).
+        Autocompletado inteligente.
+        Soporte para múltiples lenguajes.
+        Herramientas de depuración y control de versiones.
+        Personalización con plugins.
+
+Editor elegido (uno):
+    Instalación paso a paso
+        sudo apt search codium
+        
+    Ventajas básicas.
+        licencia FOSS (Free and Open-Source Software - Software Libre y de Código Abierto)
+
+Creación de un archivo .py desde el editor.
+
+Escritura de un programa sencillo con:
+
+    Comentarios.
+
+    Sangrías correctas.
+
+Ejecución del programa:
+
+    Desde IDLE o consola.
+
+Comparación final:
+
+    IDLE vs editor externo.

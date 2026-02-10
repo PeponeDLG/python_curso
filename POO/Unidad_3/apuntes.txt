@@ -1,0 +1,16 @@
+Librería OS
+-----------
+    os.path.abspath(path). Retorna la ruta absoluta del path indicado.
+    os.path.dirname(path). Retorna el directorio asociado a la ruta indicada.
+    os.path.join(path, *paths). Retorna una ruta absoluta a partir de varias.
+    os.getcwd(). Retorna la ruta o directorio actual de trabajo. Desde el que ejecuto mi aplicación.
+
+CSV
+---
+
+Librería CSV
+
+Cuando se lee un csv devuelve un tipo lista, pero no es una lista. No tiene todas las propiedades, es interesante hacer un "aux = list(csv)" para convertirlo y así
+tener todas las propiedades de este tipo de dato.
+
+next(cst) -> lee el fichero línea por línea y deja el puntero en la línea última que se ha leído.

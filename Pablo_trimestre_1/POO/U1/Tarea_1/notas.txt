@@ -1,0 +1,22 @@
+Excepciones (ejempplo):
+
+def actualizar_stock(self, aumentar):
+    if not isinstance(aumentar, int): # int comprueba el tipo para lanzar excepción
+        raise Exception("El stock debe sert un numero entero")
+
+    self.__stock += aumentar
+
+
+Ejemplo try/except:
+
+try:
+    print(Gestion_almacen.productos{1})
+
+except: ValueError as e:
+    print(e)
+
+
+
+
+- Todos los tipos de datos en Python son clases.
+En el constructor se pueden especificar los tipos en los parámetros (nombre: string) lanzando una excepción si se mete el tipo incorrecto.
