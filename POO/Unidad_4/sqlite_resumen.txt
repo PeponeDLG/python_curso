@@ -1,0 +1,8 @@
+Conexión
+--------
+
+    import sqlite3
+    conn = sqlite3.connect('mi_base.db')
+    cursor = conn.cursor()
+    cursor.execute("CREATE TABLE clientes (id INTEGER PRIMARY KEY, nombre TEXT);")
+    conn.commit()
