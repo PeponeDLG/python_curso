@@ -1,0 +1,23 @@
+base de datos documental
+- se guarda la información con estructura JSON
+- cada objeto tiene que tener un ID
+- las tablas se generan automáticamente si no le indicas nada, guardas y genera el esquema de datos solo. Pero se puede modificar después.
+
+- Soporta vectores de forma nativa. Tiene librerías para búsqueda y comparación de vectores.
+    * Vector = array 1 dimensión
+
+- Cada documento tiene su esquema propio. Se puede forzar a que todos tengan la misma estructura si quieres, pero no es obligatorio por defecto.
+
+- Si buscas por un campo que no existe, NO DA ERROR, solo no devuelve nada, pero se le puede obligar a que si.
+
+- Si conectas a una BBDD que no existe, NO DA ERROR
+
+- Se pueden indexar valores .> investigar esto
+
+- Los Updates:
+    · si el campo que quieres actualizar no existe, lo añade
+    · si el objeto que quieres actualizar no existe, lo crea
+
+*** Mirar BBDD de grafos (relacionado con google maps)
+* GDPR (creo) directiva europea que dice que los datos de los europeos tienen que estar guardados dentro de europa
+* Mirar docker para programar en local
