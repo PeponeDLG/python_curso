@@ -1,0 +1,41 @@
+Visualización Inicial
+=====================
+    Pandas
+        data.head()
+        data.tail()
+        data[s].name
+        data.dtypes -> los tipos de todas las series
+        
+        data.describe().round(2) -> estadísticas básicas
+            - count -> cuenta el número de registros de esa columna con valores válidos (NO nulos)
+            - min -> el valor mínimo que existe en esa columna
+            - max -> el valor máximo que existe en esa columna
+            - 25% -> 25% de los datos están por debajo de ese valor 
+            - 75% -> 25% de los datos están por encima de ese valor 
+
+Limpieza de nulos
+=================
+    Pandas
+        pd.isna(data)  -> []
+        pd.isna(data[s]) -> []
+        
+    Numpy
+        np.any(pd.isna()) -> True/False
+        np.where(np.all(data.notna()), "No", "Si")) -> Si/No
+        
+Transformación de tipos
+=======================
+    Pandas
+        data[s].astype(str)
+        pd.to_datetime(data[s], format="%Y-%m-%d")
+        
+        
+Estadística
+===========
+
+    Cuartiles:
+        Los cuartiles no son "cajas" que contienen, son "líneas" que cortan dejando el mismo número de registros a un lado y a otro.
+                 Q1         Q2         Q3         Q4
+        ----------|----------|----------|----------|
+                 25%        50%        75%
+
