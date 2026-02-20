@@ -20,7 +20,7 @@ def query(catego:str):
                 # Ejecuta la consulta y devuelve el num. de filas afectadas
                 cursor.execute(sql1)
                 cursor.execute(sql2)
-                conexion.commit()    
+                conexion.commit()
 
                 # Recorre los resultados contenidos en el cursor
                 # for cliente in cursor.fetchall():

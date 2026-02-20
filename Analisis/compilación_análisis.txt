@@ -13,6 +13,10 @@ Visualización Inicial
             - 25% -> 25% de los datos están por debajo de ese valor 
             - 75% -> 25% de los datos están por encima de ese valor 
 
+				Conteo de valores repetidos
+					data["s"].value_counts()
+					data["s"].isna().sum() -> conteo de nulos
+
 Limpieza de nulos
 =================
     Pandas
@@ -22,7 +26,10 @@ Limpieza de nulos
     Numpy
         np.any(pd.isna()) -> True/False
         np.where(np.all(data.notna()), "No", "Si")) -> Si/No
-        
+    
+		Rellenar los nulos:
+			data[s].fillna("valor")
+		
 Transformación de tipos
 =======================
     Pandas
