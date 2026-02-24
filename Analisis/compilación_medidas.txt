@@ -1,0 +1,102 @@
+MEDIDAS DE POSICIÓN
+===================
+- Indican la situación de la variable en su escala de medida
+
+    Tendencia central
+    -----------------
+
+        Media -> Centro de gravedad de la distribución.
+                - No robusta ante valores extremos
+        
+        Mediana -> Divide la distribución en dos partes iguales.
+                    - Ideales para distribuciones asimétricas
+
+        Moda -> El valor que más se repite en la distribución
+                - No afectada por valores extremos
+                - Puede haber más de una moda
+    
+    Tendencia NO central
+    --------------------
+
+        Cuantil -> Valor de la variable que divide la distribción partes iguales (Datos ordenados)
+
+MEDIDAS DE DISPERSIÓN
+=====================
+- Evalúan la representatividad y variabilidad de un conjunto de datos 
+    -> Lo lejos/cerca que están los datos con respecto a una medida de posición central
+
+    Dispersión Absoluta
+    -------------------
+        
+        Sin referencia central
+        ----------------------
+            Recorrido muestral -> difetencia entre el máximo y mínimo valor (sirve para poco)
+                                    - Sensible a anomalías
+
+            Recorrido Intercuartílico -> C3-C1: Comprende el 50% de los datos centrales
+                                            - Más fiable ante anomalías
+
+        Con referencia central
+        ----------------------
+            Varianza -> Variabilidad del conjunto de datos con respecto a la media (S^2)
+                                    - Cuanto más cercano a 0 menos dispersión
+
+            Desviación típica -> Variabilidad del conjunto de datos con respecto a la media (S^2)
+                                    - Cuanto más cercano a 0 menos dispersión
+
+    Dispersión Relativa
+    -------------------
+        Sin referencia central
+        ----------------------
+            Recorrido relativo -> Compara la diferencia entre los valores máximo y mínimo en proporción con el máximo
+                                    Rr=(Xmax-Xmin)/Xmax
+            
+            Recorrido semi-intercuartílico -> Mide la dispersión del 50% central comparándolo con los cuartiles 1 y 3
+                                    Rsi=(C3-C1)/(C3+C1)
+
+        Con referencia central
+        ----------------------
+            Coeficiente de variación de Pearson -> Desviación típica relativa a la media.
+                                                    CVP=Desviación típica/Media
+                                                    - A más cercano a 0 menor dispersión -> media más representativa
+                                                    - 0,2% se considera una dispersión relativamente baja
+
+            Tipificación de variables -> Se usa para saber "a cuántas desviaciones típicas está un valor de la media"
+                                            Z=x-Media/Desv.típica
+                                        - Se usa para detección de Outliers -> + de 3 desviaciones es un valor extremo
+
+
+MEDIDAS FORMA
+=============
+
+    Coeficiente de Fisher
+    ---------------------
+        cf < 0 -> Asimétrica a la izquierda -> cola a la izquierda y montón a la derecha
+        cf = 0 -> Campana de gauss
+        cf > 0 -> Asimétrica a la derecha -> cola a la derecha y montón a la izquierda
+        -> +0.5 -0.5 -> se considera dentro de la simetría
+
+    Coeficiente de Curtosis/Apuntamiento
+    ------------------------------------
+        cc < 0 Platicúrtica
+        cc = 0 mesocúrtica
+        cc > 0 Leptocúrtica
+        -> +0.5 -0.5 -> se considera mesocúrtica
+        
+
+Matriz de correlación
+=====================
+Covarianza: Mide si dos variables varían juntas (como la pendiente de la regresión, pero sin escala fija).
+Correlación : Es la covarianza "estandarizada" entre -1 y 1.                    
+                    ***La correlación es la media del producto de las variables tipificadas***
+                    
+    0 -> Sin correlación
+    + -> correlación directamente proporcional
+    - -> correlación indirectamente proporcional
+    
+    | aproximado    | ¿Qué indica?              | ¿Merece estudio?  |
+    |---------------|---------------------------|-------------------|
+    | < 0.2         | Ruido / Nada              | No                |
+    | 0.2 - 0.5     | Leve / Moderada           | Quizás, explorar  |
+    | 0.5 - 0.8     | Clara / Fuerte            | Sí                |
+    | > 0.8         | Muy fuerte / Redundante   | Sí, con cuidado   |

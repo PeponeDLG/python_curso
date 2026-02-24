@@ -22,6 +22,7 @@ Limpieza de nulos
     Pandas
         pd.isna(data)  -> []
         pd.isna(data[s]) -> []
+        data.isna().sum() -> suma los nulos columna por columna
         
     Numpy
         np.any(pd.isna()) -> True/False
@@ -46,3 +47,9 @@ Estadística
         ----------|----------|----------|----------|
                  25%        50%        75%
 
+    Mapa de calor - Matriz de Correlación
+        import seaborn as sns
+        
+        correlacion = data.corr(numeric_only=True)
+        plt.figure(figsize=(8,6))
+        sns.heatmap(correlacion,annot=True,cmap="coolwarm",linewidths=0.5)

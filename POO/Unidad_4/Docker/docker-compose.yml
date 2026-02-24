@@ -13,7 +13,7 @@ services:
     container_name: mysql-POO
     # LISTA DE VALORES DE ENTORNO CON SUS VALORES
     environment:
-      MYSQL_ROOT_PASSWORD: Trassierra2026$
+      MYSQL_ROOT_PASSWORD: Trassierra2026$$
       MYSQL_DATABASE: almacen
       MYSQL_USER: user
       MYSQL_PASSWORD: poo
@@ -36,7 +36,7 @@ services:
     environment:
       PMA_HOST: datos
       PMA_PORT: 3306
-      MYSQL_ROOT_PASSWORD: Trassierra2026$
+      MYSQL_ROOT_PASSWORD: Trassierra2026$$
 
 # DEFINICIÓN DE VOLÚMENES DOCKER A USAR POR LOS SERVICIOS
 volumes:

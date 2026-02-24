@@ -1,16 +1,16 @@
-POO -> Ejercicio de la unidad 4 -> reenviar el ejercicio ¡¡¡¡¡¡con todos los ficheros!!!!!
-    -> Configurar los entornos virtuales de conda para manejarlos desde Codium y etc.
+POO -> Configurar los entornos virtuales de conda para manejarlos desde Codium y etc.
+        ** Mirar Dockers
 
-
-Entornos -> Práctica para Lunes 23 a las 00:00
+Entornos -> 
 
 Análisis -> Práctica 4.1
 
-EECC -> 
+EECC -> Se hace en clase
 
 
 Extra:
 
+-> Indagar sobre Dockers, instalación, configuración, etc.
 ¡¡¡¡Practica Diccionarios como si te fuese la vida en ello!!!!!
 
-Mirar cómo acceder a mongodb desde Python para el curso del Viernes
+
