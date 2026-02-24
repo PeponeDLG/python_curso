@@ -1,0 +1,7 @@
+flask y django son tecnologías de back, no son complementarias.
+
+Django es fullstack -> potente y complejo
+Flask es como un microframework -> sencillo y poco potente 
+    -> index = app.py
+    -> from flask import Flask
+    -> app = Flask

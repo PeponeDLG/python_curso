@@ -1,4 +1,4 @@
-from conn_almacen_plus import Conn_almacen
+from conn_almacen_pdf import Conn_almacen
 import os
 
 os.system("clear")

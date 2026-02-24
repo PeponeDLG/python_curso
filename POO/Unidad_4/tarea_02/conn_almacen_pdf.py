@@ -59,7 +59,7 @@ class Conn_almacen():
             if nombre == "" or nombre.endswith("pdf"):
                 raise Exception("El nombre del fichero es obligatorio (sin extensión)")
             
-            nombre = os.path.join(os.path.dirname(__file__),nombre+".pfd")
+            nombre = os.path.join(os.path.dirname(__file__),nombre)
             
             doc = SimpleDocTemplate(f"{nombre}.pdf", pagesize=letter)
             styles = getSampleStyleSheet()

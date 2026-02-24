@@ -2,5 +2,8 @@
     "python.defaultInterpreterPath": "/home/pepone/anaconda3/envs/ml/bin/python",
     "python.terminal.activateEnvironment": true,
     "python.analysis.autoSearchPaths": false,
-    "python.condaPath": "/home/pepone/anaconda3/bin/conda"
+    "python.condaPath": "/home/pepone/anaconda3/bin/conda",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
 }
