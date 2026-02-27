@@ -1,0 +1,20 @@
+Crear entorno
+    
+    python3 -m venv nombre_entorno
+
+Activar entorno
+
+    source nombre_entorno/bin/activate
+
+Desactivar entorno
+
+    deactivate
+
+Instalar paquetes
+
+    # Con el entorno activado
+    pip install paquete 
+
+Eliminar entorno
+
+    rm -rf nombre_entorno

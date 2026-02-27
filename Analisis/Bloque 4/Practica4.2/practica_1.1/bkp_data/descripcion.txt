@@ -1,0 +1,7 @@
+Descripción
+
+Tabla de INEbase Porcentaje de población con ingresos por unidad de consumo por debajo de determinados umbrales fijos por sexo y nacionalidad. Anual. Municipios. Atlas de distribución de renta de los hogares
+
+Desde 01/01/2015 - 1:00 (UTC+01:00) hasta 01/01/2023 - 1:00 (UTC+01:00)
+
+https://datos.gob.es/es/catalogo/ea0010587-porcentaje-de-poblacion-con-ingresos-por-unidad-de-consumo-por-debajo-de-determinados-umbrales-fijos-por-sexo-y-nacionalidad-adrh-identificador-api-311371

@@ -1,0 +1,28 @@
+Pasos a seguir para un análisis exploratorio de datos
+-----------------------------------------------------
+
+- Primero miramos los datos estadísticos básicos como los que pandas nos saca en el método .describe()
+- Fijarnos en los valores máximos y mínimos con respecto a los Q1 y Q3
+- Sacar el plt.boxplot() de los bigotes para ver los Outliers
+- Hacer Fisher y Curtosis para ver las simetrías
+
+- Hacer gráficas y gráficas.
+    Histogramas para ver los grupos de datos
+    Tarta para ver las categorías cómo se reparten
+    Nubes de puntos para ver las distribuciones y si siguen algún tipo de patrón
+
+Ideas
+=====
+    Columnas del dataset:
+        Municipios
+        Distritos
+        Secciones -> Subdivisión de un distrito
+        Sexo -> Hombres, mujeres y total (toda la población de los dos sexos)
+        Nacionalidad -> España/Extranjero
+        Distribución de la renta por unidad de consumo (la primera persona adulta suma 1, la segunda 0.5, los niños 0.3, etc.)
+        Periodo
+        Total
+        Cod_Postal
+        Porcentaje -> % de gente que tenían ingresos por unidad de consumo por debajo de 5.000 Euros fue de 
+
+-> Como hay distritos nulos porque son pueblos pequeños que no tienen, podríamos solo guiarnos por los códigos postales

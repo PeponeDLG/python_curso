@@ -6,18 +6,18 @@ pedidos = [
     {"id":105, "cliente":"Sara", "importe":75.6, "pagado": False}
 ]
 
-x = filter(lambda x:x["pagado"]==True,pedidos)
+# x = filter(lambda x:x["pagado"]==True,pedidos)
 
-print(list(x))
+# print(list(x))
 
-x = filter(lambda x:x["importe"]>=100,pedidos)
-print("caros: ",list(x))
+# x = filter(lambda x:x["importe"]>=100,pedidos)
+# print("caros: ",list(x))
 
-lprint(list(x))
-exit()
+# lprint(list(x))
+# exit()
 
 
-print(pedidos[0]["importe"])
+# print(pedidos[0]["importe"])
 iterador = map(lambda x:x["importe"],pedidos)
 print(list(iterador))
 
