@@ -112,13 +112,22 @@ def subtotal_pedido_map(pedido, tienda):
     Subtotal = suma de (precio * qty) de todos los items.
     """
     
-    pass
+    subtotal = 0
+    
+    subtotal = sum(map(lambda x: tienda["productos"][x["sku"]]["precio"] * x["qty"] ,pedido["items"]))
+    
+    return subtotal
 
 
 def unidades_totales_sku(tienda, sku):
     """Unidades totales pedidas de ese SKU SOLO en pedidos pagados."""
     
-    pass
+    unidades = 0
+    
+    for i in tienda["pedidos"]:
+        unidades += sum(map(lambda x: x["qty"] if x["sku"]==sku else 0 ,i["items"]))
+    
+    return unidades
 
 
 def skus_con_stock_insuficiente(tienda): # Filter y lambda

@@ -1,11 +1,11 @@
-POO -> Configurar los entornos virtuales de conda para manejarlos desde Codium y etc.
+POO -> 
         ** Mirar Dockers
 
 Entornos -> 
 
 Análisis -> Práctica 4.2 -> Completar la práctica 1.1 del Bloque2/Practica Panda 1.0
 
-EECC -> Se hace en clase
+EECC -> Se hace en clase hasta el Jueves 26 a las 18:00
 
 
 Extra:
