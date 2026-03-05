@@ -65,15 +65,33 @@ En models.py añadir la clase correspondiente al modelo quedando así:
             return f"{self.nombre} - {self.telefono} - {self.correo}"
     ```
 
-4. En settings.py especificar la base de datos en el diccionario DATABASES quedando así:
-    ```py
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'personas.db',
+4. SQLite
+    * En settings.py especificar la base de datos en el diccionario DATABASES quedando así:
+        ```py
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'personas.db',
+            }
         }
-    }
-    ```
+        ```
+4. MySQL
+    * En settings.py especificar la base de datos en el diccionario DATABASES quedando así:
+        ```py
+        DATABASES = {
+            'sqlite': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.test_django_orm',
+            },
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': 'test_django_orm',
+                'USER': 'root',
+                'PASSWORD': 'Trassierra2026$',
+                'HOST': 'localhost',
+                'PORT': 3309,
+            }
+        }
 
 5. Migrar ejecutando:
     `python manage.py makemigrations`

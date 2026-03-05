@@ -1,0 +1,22 @@
+Listar dockers del sistema
+
+    docker ps       -> Solo los activos
+    docker ps -a    -> Activos y detenidos
+
+
+Eliminar
+
+    docker rm "CONTAINER ID(1)" "CONTAINER ID(2)" "CONTAINER ID(3)"     -> Por ID
+    docker container prune      -> Eliminar todos los detenidos
+
+Levantar/Activar
+
+    docker start NAME -> Docker ya existente
+
+    
+Parar    
+    docker stop mysql-POO
+
+
+Gestores
+    docker-composer -> 

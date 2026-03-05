@@ -180,20 +180,12 @@ def contar_categorias(nodo):
     except Exception as e:
         print("Error contar_categorias: ",e)
 
-# def ardilla(arbol, items=[], g:str=""):
-#     try:
-#         for i in arbol:
-#             print(i)
-
-#     except Exception as e:
-#         print("Error arilla: ",e)
-
 if __name__ == "__main__":
     os.system("clear")
     print("--- PRUEBAS ---")
 
-    # print("Subtotal primer pedido:", round(subtotal_pedido_map(tienda["pedidos"][0], tienda), 2))
-    # print("Unidades pagadas de P103:", unidades_totales_sku(tienda, "P103"))
+    print("Subtotal primer pedido:", round(subtotal_pedido_map(tienda["pedidos"][0], tienda), 2))
+    print("Unidades pagadas de P103:", unidades_totales_sku(tienda, "P103"))
     # print("SKUs con stock insuficiente:", skus_con_stock_insuficiente(tienda))
 
     # ranking = ranking_clientes_pagados(tienda)
