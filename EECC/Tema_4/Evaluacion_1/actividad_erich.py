@@ -3,7 +3,6 @@
 # Built-ins + lambda + recursividad
 # Entrega: actividad.py
 # =========================
-import os
 
 # --- DATOS (NO TOCAR) ---
 tienda = {
@@ -112,98 +111,103 @@ def subtotal_pedido_map(pedido, tienda):
     Subtotal = suma de (precio * qty) de todos los items.
     """
     
-    subtotal = 0
-    
-    subtotal = sum(map(lambda x: tienda["productos"][x["sku"]]["precio"] * x["qty"] ,pedido["items"]))
-    
-    return subtotal
+    return sum(
+        map(
+            lambda item: tienda["productos"][item["sku"]]["precio"] * item["qty"],
+            pedido["items"]
+        )
+    )
 
 
 def unidades_totales_sku(tienda, sku):
     """Unidades totales pedidas de ese SKU SOLO en pedidos pagados."""
     
-    unidades = 0
-    
-    for i in tienda["pedidos"]:
-        unidades += sum(map(lambda x: x["qty"] if x["sku"] == sku and i["pagado"] else 0 ,i["items"]))
-    
-    return unidades
+    return sum(
+        item["qty"]
+        for pedido in tienda["pedidos"]
+            if pedido["pagado"]
+        for item in pedido["items"]
+            if item["sku"] == sku
+    )
 
 
-def skus_con_stock_insuficiente(tienda): # Filter y lambda
+
+def skus_con_stock_insuficiente(tienda):
     """
     SKUs cuyo total de unidades pedidas (pagadas) supera su stock.
     OBLIGATORIO: usar filter(lambda ...) en esta función.
     """
     
-    pass
+    return list(
+        filter(
+            lambda sku: unidades_totales_sku(tienda, sku) >
+                        tienda["productos"][sku]["stock"],
+            tienda["productos"].keys()
+        )
+    )
 
 
-def ranking_clientes_pagados(tienda): # lambda
+def ranking_clientes_pagados(tienda):
     """
     Lista (cliente_id, gasto_total) solo pagados, ordenada desc por gasto.
     OBLIGATORIO: usar sorted(..., key=lambda ..., reverse=True)
     """
     
-    pass
+    gastos = {}
+
+    for pedido in tienda["pedidos"]:
+        if pedido["pagado"]:
+            subtotal = subtotal_pedido_map(pedido, tienda)
+            descuento = subtotal * pedido["cupon"]
+            total = subtotal - descuento + pedido["envio"]["coste"]
+
+            cliente = pedido["cliente_id"]
+            gastos[cliente] = gastos.get(cliente, 0) + total
+
+    return sorted(gastos.items(), key=lambda x: x[1], reverse=True)
 
 
-def hay_producto_agotado_en_pedidos_pagados(tienda): # any()
+def hay_producto_agotado_en_pedidos_pagados(tienda):
     """
     True si algún pedido pagado contiene producto con stock == 0.
     OBLIGATORIO: usar any(...)
     """
     
-    pass
+    return any(
+        tienda["productos"][item["sku"]]["stock"] == 0
+        for pedido in tienda["pedidos"]
+            if pedido["pagado"]
+        for item in pedido["items"]
+    )
 
 
-def profundidad_maxima(nodo:dict):
+def profundidad_maxima(nodo):
     """RECURSIVA: profundidad máxima del árbol. Raíz = 1."""
     
-    try:
-        cat = 1
-
-        for i in nodo:
-            if type(nodo[i]) == type([]):
-                for l in nodo[i]:
-                    if type(l) == type(dict()):
-                        cat += profundidad_maxima(l)
-                        break
-        
-        return cat
-
-    except Exception as e:
-        print("Error profundidad_maxima: ",e)
+    if "hijos" not in nodo or not nodo["hijos"]:
+        return 1
+    return 1 + max(profundidad_maxima(hijo) for hijo in nodo["hijos"])
 
 
 def contar_categorias(nodo):
     """RECURSIVA: cuenta nodos que tienen clave 'hijos' (categorías)."""
-    try:
-        cat = 0
+    
+    if "hijos" not in nodo:
+        return 0
+    return 1 + sum(contar_categorias(hijo) for hijo in nodo["hijos"])
 
-        for i in nodo:
-            if type(nodo[i]) == type([]):
-                cat += 1
-                for l in nodo[i]:
-                    if type(l) == type(dict()):
-                        cat += contar_categorias(l)
-                
-        return cat
 
-    except Exception as e:
-        print("Error contar_categorias: ",e)
 
 if __name__ == "__main__":
-    os.system("clear")
     print("--- PRUEBAS ---")
 
     print("Subtotal primer pedido:", round(subtotal_pedido_map(tienda["pedidos"][0], tienda), 2))
     print("Unidades pagadas de P103:", unidades_totales_sku(tienda, "P103"))
-    # print("SKUs con stock insuficiente:", skus_con_stock_insuficiente(tienda))
+    print("SKUs con stock insuficiente:", skus_con_stock_insuficiente(tienda))
 
-    # ranking = ranking_clientes_pagados(tienda)
-    # print("Ranking clientes (top 3):", ranking[:3])
+    ranking = ranking_clientes_pagados(tienda)
+    print("Ranking clientes (top 3):", ranking[:3])
 
-    # print("¿Hay producto agotado en pedidos pagados?:", hay_producto_agotado_en_pedidos_pagados(tienda))
+    print("¿Hay producto agotado en pedidos pagados?:", hay_producto_agotado_en_pedidos_pagados(tienda))
     print("Profundidad máxima del catálogo:", profundidad_maxima(catalogo))
     print("Número de categorías:", contar_categorias(catalogo))
