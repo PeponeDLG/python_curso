@@ -1,0 +1,43 @@
+services:
+  
+  #--------------------------------------------------
+  # SERVICIO SERVIDOR DE BASE DE DATOS MARIADB
+  #--------------------------------------------------
+
+  # NOMBRE DEL SERVICIO
+  datos:
+    # IMAGEN USADA
+    image: scasare178/bdpoo
+    # NOMBRE QUE LE VOY A DAR AL CONTENEDOR
+    container_name: cursosformacion_mysql
+    # LISTA DE VALORES DE ENTORNO CON SUS VALORES
+    environment:
+      MYSQL_ROOT_PASSWORD: Trassierra2026$
+      MYSQL_DATABASE: cursos
+      MYSQL_USER: user
+      MYSQL_PASSWORD: poo
+    # REDIRECCIÓN DE PUERTOS
+    ports:
+      - 3309:3306
+    # VOLÚMENES A USAR POR EL CONTENEDOR
+    volumes:
+      # DOCKER VOLUME
+      - data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: bd_phpmyadmin_cursosformacion
+    depends_on:
+      - datos
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: datos
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: Trassierra2026$
+
+# DEFINICIÓN DE VOLÚMENES DOCKER A USAR POR LOS SERVICIOS
+volumes:
+  data:
+    # TIPO DE DRIVER
+    driver: local
