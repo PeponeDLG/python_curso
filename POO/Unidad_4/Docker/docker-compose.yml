@@ -13,7 +13,7 @@ services:
     container_name: mysql-POO
     # LISTA DE VALORES DE ENTORNO CON SUS VALORES
     environment:
-      MYSQL_ROOT_PASSWORD: Trassierra2026$$
+      MYSQL_ROOT_PASSWORD: Trassierra2026$
       MYSQL_DATABASE: almacen
       MYSQL_USER: user
       MYSQL_PASSWORD: poo

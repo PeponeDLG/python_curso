@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de libros</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Precio</th>
+            <th>Fecha Lanzamiento</th>
+        </thead>
+        <tbody>
+                {% for libro in libros %}
+                <tr>
+                    <td>{{ libro.titulo }}</td>
+                    <td>{{ libro.autor }}</td>
+                    <td>{{ libro.precio }}</td>
+                    <td>{{ libro.fecha_lanzamiento }}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
+
