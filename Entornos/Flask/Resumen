@@ -1,0 +1,5 @@
+- Depuramos con F5 y con el depurador de Python normal
+
+- Librerías
+
+    from flask import Flask, request

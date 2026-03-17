@@ -1,0 +1,5 @@
+.flash-messages { list-style:none; padding:0; margin-bottom:10px; }
+.flash-messages li.success { color: green; }
+.flash-messages li.error { color: red; }
+form input { padding:5px; margin-right:5px; }
+form button { padding:5px 10px; }

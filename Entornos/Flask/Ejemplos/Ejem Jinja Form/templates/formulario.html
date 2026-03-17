@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h2>Introduce tus datos</h2>
+
+<form action="/resultado" method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Edad:</label>
+    <input type="number" name="edad" required>
+
+    <button type="submit">Enviar</button>
+</form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% macro tabla_dinamica(datos, columnas) %}
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            {% for col in columnas %}
+                <th>{{ col|capitalize }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for fila in datos %}
+        <tr>
+            {% for col in columnas %}
+                <td>{{ fila[col] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endmacro %}
+
+{% macro lista(datos, columnas) %}
+<h2>Usuarios actuales</h2>
+<ul>
+    {% for fila in datos %}
+    <li>
+        {% for col in columnas %}
+           {{col|capitalize}}: {{ fila[col] }} / 
+        {% endfor %}
+    </li>
+    {% endfor %}
+</ul>
+{% endmacro %}

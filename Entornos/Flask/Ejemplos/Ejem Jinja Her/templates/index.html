@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Inicio
+{% endblock %}
+
+{% block contenido %}
+<p>Bienvenido a la página más importante</p>
+<ul>
+{% for alumno in alumnos %}
+    <li>
+        {{ alumno.nombre }} -
+        {% if alumno.nota >= 5 %}
+            Aprobado
+        {% else %}
+            Suspenso
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

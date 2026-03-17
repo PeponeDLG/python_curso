@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h2>Listado de Alumnos</h2>
+<ul>
+{% for alumno in alumnos %}
+    <li>
+        {% if loop.first %}
+            <strong>Primer alumno:</strong>
+        {% endif %}
+        {% if loop.last %}
+            <strong>Último alumno:</strong>
+        {% endif %}
+        {{ loop.index0 }} {{ alumno.nombre }} -
+        {% if alumno.nota >= 5 %}
+            Aprobado
+        {% else %}
+            Suspenso
+        {% endif %}
+        <a href="/detalle/{{ loop.index0 }}">Detalle</a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

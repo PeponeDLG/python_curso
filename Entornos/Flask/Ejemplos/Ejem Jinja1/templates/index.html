@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera plantilla</title>
+</head>
+<body>
+    <h1>Hola {{ nombre }}</h1>
+        {% if edad >= 18 %}
+    <p>Mayor de edad</p>
+        {% else %}
+    <p>Menor de edad</p>
+        {% endif %}
+    <ul>
+        {% for alumno in alumnos %}
+        <li>{{ alumno }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import 'macros_tabla.html' as tablauser %}
+
+{% block titulo %}Usuarios{% endblock %}
+
+{% block contenido %}
+<h2>Tabla de Usuarios</h2>
+{{ tablauser.tabla_dinamica(usuarios, columnas) }}
+<br/>
+{{ tablauser.lista(usuarios, columnas) }}
+{% endblock %}
