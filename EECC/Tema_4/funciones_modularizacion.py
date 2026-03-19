@@ -1,8 +1,30 @@
 import os
 os.system("clear")
 # **kwargs
+def log(*args,**kwarg):
+    sep = kwarg.get("sep"," ")
+    end = kwarg.get("end","\n")
+    prefix = kwarg.get("prefix","")
+    upper = kwarg.get("upper",False)
 
+    print(f"sep: {sep}")
+    print(f"end: {end}")
+    print(f"prefix: {prefix}")
+    print(f"upper: {upper}")
 
+    cadena = str()
+
+    for i in args:        
+        cadena += cadena + i + sep + end + prefix 
+
+    if upper:
+        cadena = str(cadena).upper()
+
+    return cadena
+
+print(log("mensaje 1","mensaje 2", "mensaje 3",sep="-",end="|",pepe="pepe"))
+
+def opcionales(pepe="", pablo="-")
 
 # *args -> args es por convención, pero podería ser *pepe -> el * es obligatorio
 
@@ -46,3 +68,5 @@ def precio_con_iva(precio, iva=0.21):
 
 
 print(precio_con_iva(100))
+
+
