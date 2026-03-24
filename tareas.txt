@@ -3,9 +3,9 @@ POO ->
 
 Entornos -> 
 
-Análisis -> Práctica 4.2 -> Completar la práctica 1.1 del Bloque2/Practica Panda 1.0
+Análisis -> 
 
-EECC -> Se hace en clase hasta el Jueves 26 a las 18:00
+EECC -> 
 
 
 Extra:
