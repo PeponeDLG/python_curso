@@ -1,20 +1,17 @@
 import os
 import sqlite3 as sql
 
-try:
-    
-    path = os.path.join("./z_BBDD/","POO.db")
-    
-    # for i in os.listdir("./"):
-    #     print(i)
-    
-    print(os.path.exists(path))
-    
-    conn = sql.connect(path)
+os.system("clear")
 
-    cur = conn.cursor()
-    cur.execute("insert into tabla1 values(1,2)")
+dic = {
+    "persona":{
+        "nombre":"pepe",
+        "apellido1":"soler",
+        "apellido2":"membrives"
+    },
+    "notas":[1,3,2,4,5,6]
+}
 
-    conn.commit()
-except sql.Error as e:
-    print("Error de conexión: ",e)
+for i in dic:
+    for j in dic[i]:
+        print(j)
