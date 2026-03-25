@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer, header {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    padding: 20px;
+    background-color: darkred;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+}
+
+nav {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: darkcyan;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-self: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: darkblue;
+    border-radius: 5px;
+    transition: 400ms;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px;
+    background-color: burlywood;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid darkblue;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+}
+
+table thead {
+    background-color: darkblue;
+    color: white;
+}
+
+table tbody tr  {
+    background-color: aliceblue;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+img {
+    width: 500px;
+}

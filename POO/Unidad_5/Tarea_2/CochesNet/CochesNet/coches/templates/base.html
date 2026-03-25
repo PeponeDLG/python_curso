@@ -1,3 +1,4 @@
+{% load static%}
 <html lang="en">
 
     <head>
@@ -5,6 +6,8 @@
             {% block titulo%}
             {% endblock %}
         </title>
+        
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     </head>
     <body>
         <header>
@@ -15,6 +18,9 @@
                 <li><a href="{% url 'index' %}">Inicio</a></li>
                 <li><a href="{% url 'marcas' %}">Marcas</a></li>
                 <li><a href="{% url 'coches' %}">Coches</a></li>                
+                <li><a href="{% url 'sectores' %}">Sectores: coches por marca</a></li>                
+                <li><a href="{% url 'barras' %}">Barras: coches por marca</a></li>                
+                <li><a href="{% url 'lineas' %}">Lineas: coches por año de fabricación</a></li>                
             </ul>
         </nav>
         <main>

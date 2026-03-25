@@ -16,7 +16,7 @@
         <tbody>
             {% for coche in marca.coche_set.all %}
             <tr>                
-                <th>coche.nombre</th>
+                <th>{{coche.modelo}} - Precio: {{coche.precio}} - Color: {{coche.color}} - Fabricación: {{coche.fecha_fabricacion}}</th>
             </tr>
             {% endfor %}
         </tbody>

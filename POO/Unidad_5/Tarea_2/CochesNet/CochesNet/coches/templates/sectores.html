@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+
+{% block titulo %}
+
+{% endblock %}
+
+{% block contenido %}
+    <h1>Diagrama de sectores</h1>
+    <h2>Nº de coches por marca</h2>
+
+    {{ grafico | safe}}
+
+{% endblock %}

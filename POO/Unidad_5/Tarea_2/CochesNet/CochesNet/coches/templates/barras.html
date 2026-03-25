@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+
+{% block titulo %}
+
+{% endblock %}
+
+{% block contenido %}
+    <h1>Histograma</h1>
+    <h2>Precio medio por marca</h2>
+
+    {{ grafico | safe}}
+
+{% endblock %}

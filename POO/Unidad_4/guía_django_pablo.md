@@ -15,7 +15,7 @@
     `pip freeze > requirements.txt`
 
 Para volver a instalar el entorno:
-    `pip install -r requirements.txt`
+    `pip install -r requirements.txt`dj
 
 Para ver la versión de Django
     `django-admin --version`

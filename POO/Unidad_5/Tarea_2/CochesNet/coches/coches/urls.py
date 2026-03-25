@@ -1,5 +1,5 @@
 """
-URL configuration for CochesNet project.
+URL configuration for coches project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -14,15 +14,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path, include
-from coches import views
+from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
-    path('', views.index , name="index"),
-    path('marcas/', views.marcas , name="marcas"),
-    path('coches/', views.coches , name="coches"),
-    path('marcas/<int:id>', view = views.marca_por_id , name="marca_por_id"),
-    path('sectores/', view = views.sectores , name="sectores"),
-    path('barras/', view = views.barras , name="barras"),
-    path('lineas/', view = views.lineas , name="lineas"),
+    path('admin/', admin.site.urls),
 ]

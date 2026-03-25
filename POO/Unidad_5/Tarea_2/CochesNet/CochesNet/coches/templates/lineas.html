@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+
+{% block titulo %}
+
+{% endblock %}
+
+{% block contenido %}
+    <h1>Lineas</h1>
+    <h2>Número de coches por año de matriculación</h2>
+
+    {{ grafico | safe}}
+
+{% endblock %}
