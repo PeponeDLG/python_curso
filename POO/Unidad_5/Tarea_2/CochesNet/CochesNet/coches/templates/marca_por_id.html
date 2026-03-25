@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Marcas
+{% endblock %}
+
+{% block contenido %}
+    <h1>{{marca.nombre}}</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>País: {{ marca.pais }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for coche in marca.coche_set.all %}
+            <tr>                
+                <th>coche.nombre</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+{% endblock %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}Ejemplo Filtros{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include "navbar.html" %}
+    <div class="contenido">
+        {% block contenido %}{% endblock %}
+    </div>
+</body>
+</html>

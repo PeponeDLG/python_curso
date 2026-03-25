@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<ul>
+
+{% for e in entradas %}
+    <li>{{ e.artista | upper }} <span style="color:{{ e.precio | color_precio}}">({{ e.precio | euro}})</span> - {{ e.stock | estado_stock}}</li>
+{% endfor %}
+</ul>
+{% endblock %}

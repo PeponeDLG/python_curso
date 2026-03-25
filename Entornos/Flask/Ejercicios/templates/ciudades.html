@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<ul>
+{% for c in ciudades %}
+    <li>{{ c.nombre | upper }} ({{ c.nombre | length }} letras)</li>
+{% endfor %}
+</ul>
+{% endblock %}

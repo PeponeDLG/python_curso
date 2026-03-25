@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% import "macros.html" as ui %}
+
+{% block titulo %}Filtros{% endblock %}
+
+{% block contenido %}
+<h2>Usuarios con filtros</h2>
+<ul>
+    {% for u in usuarios %}
+        <li>{{ u|upper }} ({{ u|length }} letras)</li>
+    {% endfor %}
+</ul>
+
+<h2>Precios con color</h2>
+<ul>
+    {% for p in precios %}
+        <li class="{{ p|color_precio }}">{{ p|precio_euro }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Estado de stock</h2>
+<ul>
+    {% for p in productos %}
+        <li>{{ p.nombre }} → {{ p.stock|estado_stock }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Macro botón ejemplo</h2>
+{{ ui.boton("Eliminar producto","/bucles","danger") }}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% macro boton(texto, url, tipo="primary") %}
+<a href="{{ url }}" class="btn btn-{{ tipo }}">{{ texto }}</a>
+{% endmacro %}
+
+{% macro tarjeta_producto(producto) %}
+<div class="tarjeta">
+    <h3>{{ producto.nombre }}</h3>
+    <p>Precio: {{ producto.precio|precio_euro }}</p>
+    <p>Stock: {{ producto.stock|estado_stock }}</p>
+    {{ boton("Eliminar", "/flash", "danger") }}
+</div>
+{% endmacro %}

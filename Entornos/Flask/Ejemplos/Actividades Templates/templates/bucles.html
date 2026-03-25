@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo %}Bucles{% endblock %}
+
+{% block contenido %}
+<h2>Ciudades</h2>
+<ul>
+    {% for ciudad in ciudades %}
+        <li>{{ loop.index }} - {{ ciudad }}{% if loop.last %} (última ciudad){% endif %}</li>
+    {% endfor %}
+</ul>
+
+<h2>Números par o impar</h2>
+<ul>
+    {% for n in numeros %}
+        <li>{{ n }} → {% if n % 2 == 0 %}par{% else %}impar{% endif %}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block titulo %}Condicionales{% endblock %}
+
+{% block contenido %}
+<h2>Productos</h2>
+<ul>
+    {% for p in productos %}
+        <li>{{ p.nombre }} → {% if p.stock == 0 %}Sin stock{% else %}Disponible{% endif %}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

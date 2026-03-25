@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Coches
+{% endblock %}
+
+{% block contenido %}
+    <h1>Listado de Coches</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>Potencia</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for coche in coches %}
+                <tr>
+                    <td>{{ coche.marca }}</td>
+                    <td>{{ coche.modelo }}</td>
+                    <td>{{ coche.precio }}</td>
+                    <td>{{ coche.potencia }}</td>
+                    <td>{{ coche.color }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

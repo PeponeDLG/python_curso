@@ -1,0 +1,11 @@
+.btn { padding:5px 10px; text-decoration:none; border-radius:4px; color:white;}
+.btn-primary { background:#2a6df4; }
+.btn-danger { background:#e91e63; }
+
+.barato { color: green; }
+.medio { color: orange; }
+.caro { color: red; }
+
+.flash-messages { list-style:none; padding:0; }
+.flash-messages li.success { color:green; }
+.flash-messages li.error { color:red; }

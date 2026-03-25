@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<ul>
+{{ nombre | default("Invitado") }}<br><br>
+{{ usuarios | length }}<br>
+{{ usuarios | sort }}<br>
+{{ usuarios | join(", ") | title}}<br>
+</ul>
+{% endblock %}

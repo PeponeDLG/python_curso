@@ -1,0 +1,28 @@
+<html lang="en">
+
+    <head>
+        <title>
+            {% block titulo%}
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>CochesNet</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'marcas' %}">Marcas</a></li>
+                <li><a href="{% url 'coches' %}">Coches</a></li>                
+            </ul>
+        </nav>
+        <main>
+            <section>
+                {% block contenido %}
+                {% endblock %}
+
+            </section>
+        </main>
+    </body>
+</html>

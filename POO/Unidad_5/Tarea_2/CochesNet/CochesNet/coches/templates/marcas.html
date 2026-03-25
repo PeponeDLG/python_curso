@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Marcas
+{% endblock %}
+
+{% block contenido %}
+    <h1>Listado de Marcas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>País</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for marca in marcas %}
+                <tr>
+                    <td><a href="{% url 'marca_por_id' marca.id %}">{{ marca.nombre }}</a></td>
+                    <td>{{ marca.pais }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
