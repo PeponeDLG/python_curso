@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}Videoclub - Listado{% endblock %}
+
+{% block content %}
+<h2>Películas disponibles</h2>
+<a href="{{ url_for('nueva') }}" class="btn">➕ Añadir película</a>
+<div class="lista-peliculas">
+    {% if peliculas %}
+        {% for pelicula in peliculas %}
+            {{ macros.tarjeta_pelicula(pelicula) }}
+        {% endfor %}
+    {% else %}
+        <p>No hay películas registradas.</p>
+    {% endif %}
+</div>
+{% endblock %}

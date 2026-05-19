@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Videoclub - {{ pelicula.titulo }}{% endblock %}
+
+{% block content %}
+<h2>{{ pelicula.titulo }}</h2>
+<div class="detalle">
+    <p><strong>Director:</strong> {{ pelicula.director }}</p>
+    <p><strong>Año:</strong> {{ pelicula.año }}</p>
+    <p><strong>Precio de alquiler:</strong> {{ "%.2f"|format(pelicula.precio_alquiler) }} €</p>
+</div>
+<a href="{{ url_for('index') }}" class="btn">Volver al listado</a>
+<form action="{{ url_for('eliminar', id=pelicula.id) }}" method="POST" style="display:inline;">
+    <button type="submit" class="btn btn-eliminar" onclick="return confirm('¿Eliminar {{ pelicula.titulo }}?')">🗑️ Eliminar</button>
+</form>
+{% endblock %}

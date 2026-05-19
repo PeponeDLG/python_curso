@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Proyecto Django{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <aside class="sidebar">
+        <h2>Menú</h2>
+        <nav>
+            <a href="{% url 'inicio' %}" class="{% if request.resolver_match.url_name == 'inicio' %}active{% endif %}">🏠 Inicio</a>
+            <a href="{% url 'dashboard' %}" class="{% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}">📊 Dashboard</a>
+            <a href="{% url 'alertas' %}" class="{% if request.resolver_match.url_name == 'alertas' %}active{% endif %}">🔔 Alertas</a>
+            <a href="{% url 'importar' %}" class="{% if request.resolver_match.url_name == 'importar' %}active{% endif %}">📁 Importación</a>
+            <a href="{% url 'acerca' %}" class="{% if request.resolver_match.url_name == 'acerca' %}active{% endif %}">ℹ️ Acerca</a>
+        </nav>
+        <div class="logout">
+            <a href="{% url 'logout' %}">🚪 Cerrar sesión</a>
+        </div>
+    </aside>
+    {% endif %}
+
+    <main class="main-content">
+        <h1>{{ titulo }}</h1>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

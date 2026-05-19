@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Alertas - Proyecto Django{% endblock %}
+{% block content %}
+<table class="tabla-alertas">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Mensaje</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for alerta in alertas %}
+        <tr>
+            <td>{{ alerta.id }}</td>
+            <td>{{ alerta.tipo }}</td>
+            <td>{{ alerta.mensaje }}</td>
+            <td>{{ alerta.fecha }}</td>
+            <td class="estado-{{ alerta.estado|lower }}">{{ alerta.estado }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

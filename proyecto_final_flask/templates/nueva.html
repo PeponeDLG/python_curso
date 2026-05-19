@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Videoclub - Nueva película{% endblock %}
+
+{% block content %}
+<h2>Añadir nueva película</h2>
+<form method="POST">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+
+    <label for="director">Director:</label>
+    <input type="text" id="director" name="director" required>
+
+    <label for="año">Año:</label>
+    <input type="number" id="año" name="año" required>
+
+    <label for="precio_alquiler">Precio de alquiler (€):</label>
+    <input type="number" id="precio_alquiler" name="precio_alquiler" step="0.01" required>
+
+    <button type="submit" class="btn">Guardar</button>
+</form>
+<a href="{{ url_for('index') }}" class="btn btn-secundario">Volver</a>
+{% endblock %}

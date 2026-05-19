@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Importación de datos - Proyecto Django{% endblock %}
+{% block content %}
+<div class="form-importar">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>
+            <label for="archivo">Selecciona un archivo para importar:</label>
+            <input type="file" name="archivo" id="archivo" required>
+        </p>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-primary">Subir</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

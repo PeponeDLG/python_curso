@@ -1,0 +1,8 @@
+{% macro tarjeta_pelicula(pelicula) %}
+<div class="tarjeta">
+    <h3><a href="{{ url_for('detalle', id=pelicula.id) }}">{{ pelicula.titulo }}</a></h3>
+    <p><strong>Director:</strong> {{ pelicula.director }}</p>
+    <p><strong>Año:</strong> {{ pelicula.año }}</p>
+    <p><strong>Precio alquiler:</strong> {{ "%.2f"|format(pelicula.precio_alquiler) }} €</p>
+</div>
+{% endmacro %}

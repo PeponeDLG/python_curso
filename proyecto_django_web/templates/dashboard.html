@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Proyecto Django{% endblock %}
+{% block content %}
+<div class="dashboard-grid">
+    {% for metrica in metricas %}
+    <div class="card">
+        <div class="icono">{{ metrica.icono }}</div>
+        <div class="valor">{{ metrica.valor }}</div>
+        <div class="titulo">{{ metrica.titulo }}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

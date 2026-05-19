@@ -1,0 +1,25 @@
+====================================
+  PROYECTO DJANGO WEB - CREDENCIALES
+====================================
+
+URL: http://127.0.0.1:8000/
+
+USUARIOS DISPONIBLES:
+
+  1. ADMIN (superusuario - acceso a /admin/)
+     Usuario: admin
+     Contraseña: admin
+
+  2. USUARIO NORMAL
+     Usuario: usuario
+     Contraseña: usu
+
+PÁGINAS DISPONIBLES (requieren inicio de sesión):
+
+  /login/       → Inicio de sesión
+  /inicio/      → Página de inicio
+  /dashboard/   → Panel con métricas
+  /alertas/     → Tabla de alertas
+  /importar/    → Formulario de importación
+  /acerca/      → Acerca del proyecto
+  /admin/       → Panel de administración (solo admin)
